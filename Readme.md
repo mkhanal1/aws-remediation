@@ -26,10 +26,15 @@ It deploys
 
 ## Different Modes
 
-* **Single Account Mode**: A lambda function with subsequent modules per account. This gives better flexibility of disabling controls per account.
+* **Single Account Mode**: 
+ * A single lambda function with subsequent modules per account. 
+ * Disabling controls per account is possible.
 ![](/Images/RemediationSingleAccountModeV2.png?raw=true)
 
-* **Multiple Account Mode**: A lambda function with subsequent modules for all your accounts. If you disable remediation of one control, it will be effective for all accounts.
+* **Multiple Account Mode**: 
+ * A lambda function with subsequent modules for all your accounts. 
+ * Disabling remediation of one control for one account is not possible; it will be effective for all accounts.
+ 
 ![Images](/Images/RemediationMultiAccountModeV2.png?raw=true)
 
 * Prerequisites for Multiple account mode
