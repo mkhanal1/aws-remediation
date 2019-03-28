@@ -28,18 +28,18 @@ It deploys
 
 * **Single Account Mode**: 
    * A single lambda function with subsequent modules per account. 
-   * Disabling controls per account is possible.
+   * Disabling remediation of control per account is possible.
 ![](/Images/RemediationSingleAccountModeV2.png?raw=true)
 
 * **Multiple Account Mode**: 
   * A lambda function with subsequent modules for all your accounts. 
-  * Disabling remediation of one control for one account is not possible; it will be effective for all accounts.
+  * Disabling remediation of control per account is not possible; it will be effective for all accounts.
  
 ![Images](/Images/RemediationMultiAccountModeV2.png?raw=true)
 
 * Prerequisites for Multiple account mode
-   * A new cross account role must be created for the base account to access other sub accounts
-   * The role must have similar permissions to the one assigned to the role associated with lambda of base account
+   * A new cross account role must be created in sub accounts for the base account
+   * The role must have similar permissions as the one assigned to the role associated with lambda of base account
    * Input that role in input parameters of Cloudformation template
   
 * How does multi account mode works?
@@ -78,9 +78,6 @@ Mikesh | Khanal
 
 ## FAQ
 1. Do we need to provide extra permissions to already existing Qualys role?
-2. How many lambda functions would be required?
-3. Can we add our own modules?
-4. How does cross account remediation works?
-5. How will the new update/modules be cascaded to us?
-6. How can we disable remediation for few controls?
-7. How will we be notified of the remediated resources?
+2. Can we add our own modules?
+3. How will the new update/modules be cascaded to us?
+4. How can we disable remediation for few controls?
