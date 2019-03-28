@@ -27,7 +27,7 @@ It deploys
 ## Different Modes
 
 * **Multiple Account Mode**:
-![](/Images/Remediation Multi Account Mode.png?raw=true)
+![Images](/Images/Remediation Multi Account Mode.png?raw=true)
 
 * **Single Account Mode**:
 ![](/Images/Remediation Single Account Mode.png?raw=true)
