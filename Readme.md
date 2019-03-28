@@ -16,7 +16,7 @@ CID	|	CONTROL NAME	|	SERVICE	|	Remediation|
 19	|	 Ensure CloudTrail is enabled in all regions 	|	CLOUD_TRAIL	|	yes |
 20	|	Ensure CloudTrail log file validation is enabled	|	CLOUD_TRAIL	|	yes |
 23	|	Ensure AWS Config is enabled in all regions	|	CONFIG	|	yes |
-41	|	Ensure no security groups allow ingress from 0.0.0.0/0 to port 22	|	VPC	|	yes |
+[41](/Remediation/41.py)	|	Ensure no security groups allow ingress from 0.0.0.0/0 to port 22	|	VPC	|	yes |
 42	|	Ensure no security groups allow ingress from 0.0.0.0/0 to port 3389	|	VPC	|	yes |
 43	|	Ensure VPC flow logging is enabled in all VPCs	|	VPC	|	yes |
 44	|	Ensure the default security group of every VPC restricts all traffic	|	VPC	|	yes |
