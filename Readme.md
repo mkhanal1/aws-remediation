@@ -27,10 +27,10 @@ It deploys
 ## Different Modes
 
 * **Multiple Account Mode**:
-![Images](/Images/Remediation Multi Account Mode.png?raw=true)
+![Images](/Images/RemediationMultiAccountModeV2.png?raw=true)
 
 * **Single Account Mode**:
-![](/Images/Remediation Single Account Mode.png?raw=true)
+![](/Images/RemediationSingleAccountModeV2.png?raw=true)
 
 ## Controls supported and proposed remediations against them
 CID	|	CONTROL NAME	|	SERVICE	|	Remediation|
