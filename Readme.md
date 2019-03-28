@@ -4,6 +4,9 @@
 
 ## Different Modes
 
+* **Single Account Mode**:
+* **Multiple Account Mode**:
+
 ## Controls Supported and remediations against them
 CID	|	CONTROL NAME	|	SERVICE	|	Remediation|
 ----| --------------|---------|------------|
@@ -25,10 +28,9 @@ CID	|	CONTROL NAME	|	SERVICE	|	Remediation|
 55	|	Ensure auto minor version upgrade is enabled for a Database Instance	|	RDS	|	yes |
 56	|	Ensure database Instance is not listening on to a standard/default port	|	RDS	|	yes |
 57	|	Ensure that bucket policy enforces encryption in transit	|	S3	|	yes |
+
+
 ## Standard SNS Message
-
-
-
 Name| Value |
 ----| ----- |
 Mikesh | Khanal
