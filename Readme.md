@@ -2,7 +2,27 @@
 Auto remediation of resources failed against the Controls specified in Qualys CloudView
 
 ## Description
-This Cloudformation Template 
+This Cloudformation Template deploys a lambda function and subsequent modules against each controls.
+
+It needs following input parameters:
+
+* QualysUsername
+* QualysPassword
+* QualysBaseUrl
+* RemediationFrequency
+* EmailAddress
+* SlackChannelWebHook
+* Mode
+* AccountList
+
+It deploys
+
+* A main lambda function and associated role 
+* ControlID remediation modules
+* A CloudWatch Event and permission to invoke lambda
+* A output SNS Topic and associated sns policy
+
+The main lambda function 
 
 ## Different Modes
 
