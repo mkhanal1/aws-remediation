@@ -26,11 +26,19 @@ It deploys
 
 ## Different Modes
 
-* **Multiple Account Mode**:
+* **Single Account Mode**: A lambda function with subsequent modules per account. This gives better flexibility of disabling controls per account.
+![](/Images/RemediationSingleAccountModeV2.png?raw=true)
+
+* **Multiple Account Mode**: A lambda function with subsequent modules for all your accounts. If you disable remediation of one control, it will be effective for all accounts.
 ![Images](/Images/RemediationMultiAccountModeV2.png?raw=true)
 
-* **Single Account Mode**:
-![](/Images/RemediationSingleAccountModeV2.png?raw=true)
+* Prerequisites for Multiple account mode
+  * A new cross account role must be created for the base account to access other sub accounts
+  * The role must have similar permissions to the one assigned to the role associated with lambda of base account
+  * Input that role in input parameters of Cloudformation template
+  
+* How does multi account mode works?
+
 
 ## Controls supported and proposed remediations against them
 CID	|	CONTROL NAME	|	SERVICE	|	Remediation|
