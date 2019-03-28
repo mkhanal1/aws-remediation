@@ -1,6 +1,8 @@
 # Auto Remediation of AWS Controls
 Auto remediation of resources failed against the Controls specified in Qualys CloudView
 
+[![Launch Stack](https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=QualysRemediation&templateURL=https://s3.amazonaws.com/my-great-stack.json)
+
 ## Description
 This Cloudformation Template deploys a lambda function and subsequent modules against each controls.
 
@@ -22,19 +24,20 @@ It deploys
 * A CloudWatch Event and permission to invoke lambda
 * A output SNS Topic and associated sns policy
 
-The main lambda function 
+The main lambda function performs:
+* Queries Qualys CloudView API to fetch all the failed controls and associated resources for an account
+* 
 
 ## Different Modes
-
 
 * **Single Account Mode**:
 * **Multiple Account Mode**:
 
-## Controls Supported and remediations against them
+## Controls supported and proposed remediations against them
 CID	|	CONTROL NAME	|	SERVICE	|	Remediation|
 ----| --------------|---------|------------|
-19	|	 Ensure CloudTrail is enabled in all regions 	|	CLOUD_TRAIL	|	yes |
-20	|	Ensure CloudTrail log file validation is enabled	|	CLOUD_TRAIL	|	yes |
+19	|	 Ensure CloudTrail is enabled in all regions 	|	CLOUD_TRAIL	|	Enable CloudTrail |
+20	|	Ensure CloudTrail log file validation is enabled	|	CLOUD_TRAIL	|	Enable CloudTrail log file validation |
 23	|	Ensure AWS Config is enabled in all regions	|	CONFIG	|	yes |
 [41](/Remediation/41.py)	|	Ensure no security groups allow ingress from 0.0.0.0/0 to port 22	|	VPC	|	yes |
 42	|	Ensure no security groups allow ingress from 0.0.0.0/0 to port 3389	|	VPC	|	yes |
