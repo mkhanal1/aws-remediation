@@ -3,19 +3,22 @@ Auto remediation of resources failed against the Controls specified in Qualys Cl
 
 [![Launch Stack](https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=QualysRemediation&templateURL=https://s3.amazonaws.com/my-great-stack.json)
 
+## License
+_**THIS SCRIPT IS PROVIDED TO YOU "AS IS."  TO THE EXTENT PERMITTED BY LAW, QUALYS HEREBY DISCLAIMS ALL WARRANTIES AND LIABILITY FOR THE PROVISION OR USE OF THIS SCRIPT.  IN NO EVENT SHALL THESE SCRIPTS BE DEEMED TO BE CLOUD SERVICES AS PROVIDED BY QUALYS**_
+
 ## Description
 This Cloudformation Template deploys a lambda function and subsequent modules against each controls.
 
 It needs following input parameters:
 
-* QualysUsername: Qualys username to call CloudView API to download the evaluation results
-* QualysPassword: Qualys password to call CloudView API to download the evaluation results
-* QualysBaseUrl: Qualys baseurl to download the evaluation results
-* RemediationFrequency: Frequency for setting up remediation of Controls. [For syntax, check](https://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events-schedule-expressions.html)
-* EmailAddress: email address for receiving logs about resources affected by controls being remediated
-* SlackChannelWebHook: Webhook to post logs in Slack channel
-* Mode: single or multiple account mode
-* AccountList: comma delimeted list of accounts
+* **QualysUsername:** Qualys username to call CloudView API to download the evaluation results
+* **QualysPassword:** Qualys password to call CloudView API to download the evaluation results
+* **QualysBaseUrl:** Qualys baseurl to download the evaluation results
+* **RemediationFrequency:** Frequency for setting up remediation of Controls. [For syntax, check](https://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events-schedule-expressions.html)
+* **EmailAddress:** email address for receiving logs about resources affected by controls being remediated
+* **SlackChannelWebHook:** Webhook to post logs in Slack channel
+* **Mode:** single or multiple account mode
+* **AccountList:** comma delimeted list of accounts
 
 It deploys
 
@@ -37,12 +40,12 @@ It deploys
  
 ![Images](/Images/RemediationMultiAccountModeV2.png?raw=true)
 
-* Prerequisites for Multiple account mode
+* _Prerequisites for Multiple account mode_
    * A new cross account role must be created in sub accounts for the base account
    * The role must have similar permissions as the one assigned to the role associated with lambda of base account
    * Input that role in input parameters of Cloudformation template
   
-* How does multi account mode works?
+* _How does multi account mode works?_
 
 
 ## Controls supported and proposed remediations against them
@@ -66,12 +69,6 @@ CID	|	CONTROL NAME	|	SERVICE	|	Remediation|
 55	|	Ensure auto minor version upgrade is enabled for a Database Instance	|	RDS	|	yes |
 56	|	Ensure database Instance is not listening on to a standard/default port	|	RDS	|	yes |
 57	|	Ensure that bucket policy enforces encryption in transit	|	S3	|	yes |
-
-
-## Standard SNS Message (available in product version)
-Name| Value |
-----| ----- |
-Mikesh | Khanal
 
 ## Usage
 [![Launch Stack](https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=QualysRemediation&templateURL=https://s3.amazonaws.com/my-great-stack.json)
