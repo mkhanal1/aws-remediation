@@ -1,8 +1,11 @@
-# Repo Name 
+# Auto Remediation of AWS Controls
+Auto remediation of resources failed against the Controls specified in Qualys CloudView
 
 ## Description
+This Cloudformation Template 
 
 ## Different Modes
+
 
 * **Single Account Mode**:
 * **Multiple Account Mode**:
