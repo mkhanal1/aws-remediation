@@ -8,14 +8,14 @@ This Cloudformation Template deploys a lambda function and subsequent modules ag
 
 It needs following input parameters:
 
-* QualysUsername
-* QualysPassword
-* QualysBaseUrl
-* RemediationFrequency
-* EmailAddress
-* SlackChannelWebHook
-* Mode
-* AccountList
+* QualysUsername: Qualys username to call CloudView API to download the evaluation results
+* QualysPassword: Qualys password to call CloudView API to download the evaluation results
+* QualysBaseUrl: Qualys baseurl to download the evaluation results
+* RemediationFrequency: Frequency for setting up remediation of Controls. [For syntax, check](https://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events-schedule-expressions.html)
+* EmailAddress: email address for receiving logs about resources affected by controls being remediated
+* SlackChannelWebHook: Webhook to post logs in Slack channel
+* Mode: single or multiple account mode
+* AccountList: comma delimeted list of accounts
 
 It deploys
 
@@ -24,14 +24,10 @@ It deploys
 * A CloudWatch Event and permission to invoke lambda
 * A output SNS Topic and associated sns policy
 
-The main lambda function performs:
-* Queries Qualys CloudView API to fetch all the failed controls and associated resources for an account
-* 
-
 ## Different Modes
 
-* **Single Account Mode**:
 * **Multiple Account Mode**:
+* **Single Account Mode**:
 
 ## Controls supported and proposed remediations against them
 CID	|	CONTROL NAME	|	SERVICE	|	Remediation|
@@ -56,12 +52,13 @@ CID	|	CONTROL NAME	|	SERVICE	|	Remediation|
 57	|	Ensure that bucket policy enforces encryption in transit	|	S3	|	yes |
 
 
-## Standard SNS Message
+## Standard SNS Message (available in product version)
 Name| Value |
 ----| ----- |
 Mikesh | Khanal
 
 ## Usage
+[![Launch Stack](https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=QualysRemediation&templateURL=https://s3.amazonaws.com/my-great-stack.json)
 
 ## FAQ
 1. Do we need to provide extra permissions to already existing Qualys role?
