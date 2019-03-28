@@ -34,6 +34,13 @@ It deploys
    * Disabling remediation of control per account is possible.
 ![](/Images/RemediationSingleAccountModeV2.png?raw=true)
 
+* _How does single account mode works?_
+    1. The main lambda  will make an API call to Qualys CloudView API to list all the failed controls for the account.
+    2. Based on the control id, the remediation module will be called.
+    3. The module, if present, will take the remediation action specified in the table below.
+    4. The module will send the logs to main lambda, which sends it to Output SNS topic.
+    5. The SNS topic, if subscribed, will send information to email or slack channel.
+
 * **Multiple Account Mode**: 
   * A lambda function with subsequent modules for all your accounts. 
   * Disabling remediation of control per account is not possible; it will be effective for all accounts.
@@ -47,6 +54,11 @@ It deploys
   
 * _How does multi account mode works?_
 
+    1. The main lambda  will make an API call to Qualys CloudView API to list all the failed controls for the account.
+    2. Based on the control id, the remediation module will be called.
+    3. The module, if present, will take the remediation action specified in the table below.
+    4. The module will send the logs to main lambda, which sends it to Output SNS topic.
+    5. The SNS topic, if subscribed, will send information to email or slack channel.
 
 ## Controls supported and proposed remediations against them
 CID	|	CONTROL NAME	|	SERVICE	|	Remediation|
