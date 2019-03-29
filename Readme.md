@@ -1,5 +1,5 @@
 # Auto Remediation of AWS Controls
-**Auto remediation of resources failed against the Controls specified in Qualys CloudView**
+Auto remediation of resources failed against the Controls specified in Qualys CloudView
 
 [![Launch Stack](https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=QualysRemediation&templateURL=https://s3.amazonaws.com/my-great-stack.json)
 
