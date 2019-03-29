@@ -55,10 +55,13 @@ It deploys
 * _How does multi account mode works?_
 
     1. The main lambda  will make an API call to Qualys CloudView API to list all the failed controls for the account.
-    2. Based on the control id, the remediation module will be called.
-    3. The module, if present, will take the remediation action specified in the table below.
-    4. The module will send the logs to main lambda, which sends it to Output SNS topic.
-    5. The SNS topic, if subscribed, will send information to email or slack channel.
+    2. It will verify if the account id mentioned in alert is same as the one where lambda function resides.
+    3. If different, it will try to assume a role mentioned by customer during input parameters.
+    4. if success, STS will return credentials/keys to assume that role for a specified period.
+    5. A session is created and Based on the control id, the remediation module will be called and that session will be passed as input.
+    5. The module, if present, will take the remediation action specified in the table below.
+    6. The module will send the logs to main lambda, which sends it to Output SNS topic.
+    7. The SNS topic, if subscribed, will send information to email or slack channel.
 
 ## Controls supported and proposed remediations against them
 CID	|	CONTROL NAME	|	SERVICE	|	Remediation|
@@ -87,6 +90,10 @@ CID	|	CONTROL NAME	|	SERVICE	|	Remediation|
 
 ## FAQ
 1. Do we need to provide extra permissions to already existing Qualys role?
+    * No. However, a new role will be created for lambda function so that it can act on resources to remediate them. The list of permissions is mentioned in [file] (/Config/lambdarole.json)
 2. Can we add our own modules?
+    * Yes, we can build your own lambda functions against unsupported modules or build a different remediation action against the supported module. You will have to store it under [Remediation](/Remediation) folder
 3. How will the new update/modules be cascaded to us?
+    * This GitHub Readme will be updated with new modules which can be imported under [Remediation](/Remediation) folder or customer can re run the CloudFormation template.
 4. How can we disable remediation for few controls?
+    * Yes, you can disable remediation for controls. For multiple account mode, the disabled remediation for controls will be applicable for all accounts.
