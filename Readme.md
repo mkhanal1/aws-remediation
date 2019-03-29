@@ -90,7 +90,7 @@ CID	|	CONTROL NAME	|	SERVICE	|	Remediation|
 
 ## FAQ
 1. Do we need to provide extra permissions to already existing Qualys role?
-    * No. However, a new role will be created for lambda function so that it can act on resources to remediate them. The list of permissions is mentioned in [file] (/Config/lambdarole.json)
+    * No. However, a new role will be created for lambda function so that it can act on resources to remediate them. The list of permissions is mentioned in [lambdarole.json](/Config/lambdarole.json)
 2. Can we add our own modules?
     * Yes, we can build your own lambda functions against unsupported modules or build a different remediation action against the supported module. You will have to store it under [Remediation](/Remediation) folder
 3. How will the new update/modules be cascaded to us?
