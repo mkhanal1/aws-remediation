@@ -14,7 +14,7 @@ It needs following input parameters:
 * **QualysUsername:** Qualys username to call CloudView API to download the evaluation results
 * **QualysPassword:** Qualys password to call CloudView API to download the evaluation results
 * **QualysBaseUrl:** Qualys baseurl to download the evaluation results
-* **RemediationFrequency:** Frequency for setting up remediation of Controls. [For syntax, check](https://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events-schedule-expressions.html)
+* **RemediationFrequency:** Frequency for setting up remediation of Controls. [For proper syntax, check this link.](https://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events-schedule-expressions.html)
 * **EmailAddress:** email address for receiving logs about resources affected by controls being remediated
 * **SlackChannelWebHook:** Webhook to post logs in Slack channel
 * **Mode:** single or multiple account mode
@@ -66,24 +66,24 @@ It deploys
 ## Controls supported and proposed remediations against them
 CID	|	CONTROL NAME	|	SERVICE	|	Remediation|
 ----| --------------|---------|------------|
-19	|	 Ensure CloudTrail is enabled in all regions 	|	CLOUD_TRAIL	|	Enable CloudTrail |
-20	|	Ensure CloudTrail log file validation is enabled	|	CLOUD_TRAIL	|	Enable CloudTrail log file validation |
-23	|	Ensure AWS Config is enabled in all regions	|	CONFIG	|	yes |
+[19](/Remediation/19.py)	|	 Ensure CloudTrail is enabled in all regions 	|	CLOUD_TRAIL	|	Enable CloudTrail |
+[20](/Remediation/20.py)	|	Ensure CloudTrail log file validation is enabled	|	CLOUD_TRAIL	|	Enable CloudTrail log file validation |
+[23](/Remediation/23.py)	|	Ensure AWS Config is enabled in all regions	|	CONFIG	|	yes |
 [41](/Remediation/41.py)	|	Ensure no security groups allow ingress from 0.0.0.0/0 to port 22	|	VPC	|	yes |
-42	|	Ensure no security groups allow ingress from 0.0.0.0/0 to port 3389	|	VPC	|	yes |
-43	|	Ensure VPC flow logging is enabled in all VPCs	|	VPC	|	yes |
-44	|	Ensure the default security group of every VPC restricts all traffic	|	VPC	|	yes |
-45	|	S3 Bucket Access Control List Grant Access to Everyone or Authenticated Users	|	S3	|	yes |
-46	|	Ensure S3 Bucket Policy does not allow anonymous (public) access to S3 bucket	|	S3	|	yes |
-47	|	Ensure access logging is enabled for S3 buckets	|	S3	|	yes |
-48	|	Ensure versioning is enabled for S3 buckets	|	S3	|	yes |
-51	|	Ensure that Public Accessibility is set to No for Database Instances	|	RDS	|	yes |
-52	|	Ensure DB snapshot is not publicly visible	|	RDS	|	yes |
-53	|	Ensure Encryption is enabled for the database Instance	|	RDS	|	yes |
-54	|	Ensure database Instance snapshot is encrypted	|	RDS	|	yes |
-55	|	Ensure auto minor version upgrade is enabled for a Database Instance	|	RDS	|	yes |
-56	|	Ensure database Instance is not listening on to a standard/default port	|	RDS	|	yes |
-57	|	Ensure that bucket policy enforces encryption in transit	|	S3	|	yes |
+[42](/Remediation/42.py)	|	Ensure no security groups allow ingress from 0.0.0.0/0 to port 3389	|	VPC	|	yes |
+[43](/Remediation/43.py)	|	Ensure VPC flow logging is enabled in all VPCs	|	VPC	|	yes |
+[44](/Remediation/44.py)	|	Ensure the default security group of every VPC restricts all traffic	|	VPC	|	yes |
+[45](/Remediation/45.py)	|	S3 Bucket Access Control List Grant Access to Everyone or Authenticated Users	|	S3	|	yes |
+[46](/Remediation/46.py)	|	Ensure S3 Bucket Policy does not allow anonymous (public) access to S3 bucket	|	S3	|	yes |
+[47](/Remediation/47.py)	|	Ensure access logging is enabled for S3 buckets	|	S3	|	yes |
+[48](/Remediation/48.py)	|	Ensure versioning is enabled for S3 buckets	|	S3	|	yes |
+[51](/Remediation/51.py)	|	Ensure that Public Accessibility is set to No for Database Instances	|	RDS	|	yes |
+[52](/Remediation/52.py)	|	Ensure DB snapshot is not publicly visible	|	RDS	|	yes |
+[53](/Remediation/53.py)	|	Ensure Encryption is enabled for the database Instance	|	RDS	|	yes |
+[54](/Remediation/54.py)	|	Ensure database Instance snapshot is encrypted	|	RDS	|	yes |
+[55](/Remediation/55.py)	|	Ensure auto minor version upgrade is enabled for a Database Instance	|	RDS	|	yes |
+[56](/Remediation/56.py)	|	Ensure database Instance is not listening on to a standard/default port	|	RDS	|	yes |
+[57](/Remediation/57.py)	|	Ensure that bucket policy enforces encryption in transit	|	S3	|	yes |
 
 ## Usage
 [![Launch Stack](https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=QualysRemediation&templateURL=https://s3.amazonaws.com/my-great-stack.json)
