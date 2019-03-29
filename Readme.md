@@ -88,6 +88,7 @@ It needs following input parameters:( An example file enlisting parameters is [h
   * **EmailAddress:** email address for receiving logs about resources affected by controls being remediated
   * **SlackChannelWebHook:** Webhook to post logs in Slack channel
   * **AccountList:** comma delimeted list of accounts
+  * **ControlsIdforRemediation:** ControlId for which you want to enable remediation
 
 
 
