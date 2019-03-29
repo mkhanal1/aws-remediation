@@ -11,10 +11,10 @@ This Cloudformation Template deploys a lambda function and subsequent modules ag
 
 It deploys
 
-1. **A main lambda function and associated role** 
-2. **ControlID remediation modules**
-3. **A CloudWatch Event and permission to invoke lambda**
-4. **A output SNS Topic and associated sns policy**
+  1. **A main lambda function and associated role** 
+  2. **ControlID remediation modules**
+  3. **A CloudWatch Event and permission to invoke lambda**
+  4. **A output SNS Topic and associated sns policy**
 
 ## Different Modes
 
@@ -81,23 +81,23 @@ CID	|	CONTROL NAME	|	SERVICE	|	Remediation|
 
 It needs following input parameters:( An example file enlisting parameters is [here](/Config/parameters.json) )
 
-* **QualysUsername:** Qualys username to call CloudView API to download the evaluation results
-* **QualysPassword:** Qualys password to call CloudView API to download the evaluation results
-* **QualysBaseUrl:** Qualys baseurl to download the evaluation results
-* **RemediationFrequency:** Frequency for setting up remediation of Controls. [For proper syntax, check this link.](https://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events-schedule-expressions.html)
-* **EmailAddress:** email address for receiving logs about resources affected by controls being remediated
-* **SlackChannelWebHook:** Webhook to post logs in Slack channel
-* **Mode:** single or multiple account mode
-* **AccountList:** comma delimeted list of accounts
+  * **QualysUsername:** Qualys username to call CloudView API to download the evaluation results
+  * **QualysPassword:** Qualys password to call CloudView API to download the evaluation results
+  * **QualysBaseUrl:** Qualys baseurl to download the evaluation results
+  * **RemediationFrequency:** Frequency for setting up remediation of Controls. [For proper syntax, check this link.](https://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events-schedule-expressions.html)
+  * **EmailAddress:** email address for receiving logs about resources affected by controls being remediated
+  * **SlackChannelWebHook:** Webhook to post logs in Slack channel
+  * **Mode:** single or multiple account mode
+  * **AccountList:** comma delimeted list of accounts
 
 
 
 ## FAQ
-1. Do we need to provide extra permissions to already existing Qualys role?
-    * No. However, a new role will be created for lambda function so that it can act on resources to remediate them. The list of permissions is mentioned in [lambdarole.json](/Config/lambdarole.json)
-2. Can we add our own modules?
-    * Yes, we can build your own lambda functions against unsupported modules or build a different remediation action against the supported module. You will have to store it under [Remediation](/Remediation) folder
-3. How will the new update/modules be cascaded to us?
-    * This GitHub Readme will be updated with new modules which can be imported under [Remediation](/Remediation) folder or customer can re run the CloudFormation template.
-4. How can we disable remediation for few controls?
-    * Yes, you can disable remediation for controls. For multiple account mode, the disabled remediation for controls will be applicable for all accounts.
+  1. Do we need to provide extra permissions to already existing Qualys role?
+      * No. However, a new role will be created for lambda function so that it can act on resources to remediate them. The list of permissions is mentioned in [lambdarole.json](/Config/lambdarole.json)
+  2. Can we add our own modules?
+      * Yes, we can build your own lambda functions against unsupported modules or build a different remediation action against the supported module. You will have to store it under [Remediation](/Remediation) folder
+  3. How will the new update/modules be cascaded to us?
+      * This GitHub Readme will be updated with new modules which can be imported under [Remediation](/Remediation) folder or customer can re run the CloudFormation template.
+  4. How can we disable remediation for few controls?
+      * Yes, you can disable remediation for controls. For multiple account mode, the disabled remediation for controls will be applicable for all accounts.
