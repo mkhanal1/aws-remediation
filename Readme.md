@@ -1,5 +1,5 @@
 # Auto Remediation of AWS Controls
-Auto remediation of resources failed against the Controls specified in Qualys CloudView
+**Auto remediation of resources failed against the Controls specified in Qualys CloudView**
 
 [![Launch Stack](https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=QualysRemediation&templateURL=https://s3.amazonaws.com/my-great-stack.json)
 
@@ -9,7 +9,7 @@ _**THIS SCRIPT IS PROVIDED TO YOU "AS IS."  TO THE EXTENT PERMITTED BY LAW, QUAL
 ## Description
 This Cloudformation Template deploys a lambda function and subsequent modules against each controls.
 
-It deploys
+It deploys ==>
 
   1. **A main lambda function and associated role** 
   2. **ControlID remediation modules**
@@ -39,9 +39,9 @@ It deploys
 
    > * _Prerequisites for Multiple account mode_
    
-      [ ] A new cross account role must be created in sub accounts for the base account
-      [ ] The role must have similar permissions as the one assigned to the role associated with lambda of base account
-      [ ] Input that role in input parameters of Cloudformation template
+     - [ ] A new cross account role must be created in sub accounts for the base account.
+     - [ ] The role must have similar permissions as the one assigned to the role associated with lambda of base account.
+     - [ ] Input that role in input parameters of Cloudformation template.
   
    > * _How does multi account mode works?_
    
@@ -49,7 +49,7 @@ It deploys
         2. It will verify if the account id mentioned in alert is same as the one where lambda function resides.
         3. If different, it will try to assume a role mentioned by customer during input parameters.
         4. if success, STS will return credentials/keys to assume that role for a specified period.
-        5. A session is created and Based on the control id, the remediation module will be called and that session will be passed as           input.
+        5. A session is created and Based on the control id, the remediation module will be called and that session will be passed as input.
         6. The module, if present, will take the remediation action specified in the table below.
         7. The module will send the logs to main lambda, which sends it to Output SNS topic.
         8. The SNS topic, if subscribed, will send information to email or slack channel.
@@ -79,7 +79,7 @@ CID	|	CONTROL NAME	|	SERVICE	|	Remediation|
 ## Usage
 [![Launch Stack](https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=QualysRemediation&templateURL=https://s3.amazonaws.com/my-great-stack.json)
 
-It needs following input parameters:( An example file enlisting parameters is [here](/Config/parameters.json) )
+It needs following input parameters:( An example file enlisting parameters is [here](/Config/parameters.json).)
 
   * **QualysUsername:** Qualys username to call CloudView API to download the evaluation results
   * **QualysPassword:** Qualys password to call CloudView API to download the evaluation results
@@ -94,10 +94,10 @@ It needs following input parameters:( An example file enlisting parameters is [h
 
 ## FAQ
   1. Do we need to provide extra permissions to already existing Qualys role?
-      * No. However, a new role will be created for lambda function so that it can act on resources to remediate them. The list of permissions is mentioned in [lambdarole.json](/Config/lambdarole.json)
+      - No. However, a new role will be created for lambda function so that it can act on resources to remediate them. The list of permissions is mentioned in [lambdarole.json](/Config/lambdarole.json) file.
   2. Can we add our own modules?
-      * Yes, we can build your own lambda functions against unsupported modules or build a different remediation action against the supported module. You will have to store it under [Remediation](/Remediation) folder
+      - Yes, we can build your own lambda functions against unsupported modules or build a different remediation action against the supported module. You will have to store it under [Remediation](/Remediation) folder.
   3. How will the new update/modules be cascaded to us?
-      * This GitHub Readme will be updated with new modules which can be imported under [Remediation](/Remediation) folder or customer can re run the CloudFormation template.
+      - This GitHub Readme will be updated with new modules which can be imported under [Remediation](/Remediation) folder or customer can re run the CloudFormation template.
   4. How can we disable remediation for few controls?
-      * Yes, you can disable remediation for controls. For multiple account mode, the disabled remediation for controls will be applicable for all accounts.
+      - Yes, you can disable remediation for controls. For multiple account mode, the disabled remediation for controls will be applicable for all accounts.
