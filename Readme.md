@@ -16,7 +16,7 @@ It deploys ==>
   3. **A CloudWatch Event and permission to invoke lambda**
   4. **A output SNS Topic and associated sns policy**
 
-## Different Modes
+## Different Deployment Modes
 
 * **Single Account Mode**: 
    * A single lambda function with subsequent modules per account. 
