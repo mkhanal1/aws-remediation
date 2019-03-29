@@ -18,7 +18,7 @@ It deploys ==>
 
 ## Different Deployment Modes
 
-* **Single Account Mode**: 
+* **Per Account Mode**: 
    * A single lambda function with subsequent modules per account. 
    * Disabling remediation of control per account is possible.
 ![](/Images/RemediationSingleAccountModeV2.png?raw=true)
@@ -32,7 +32,7 @@ It deploys ==>
         5. The SNS topic, if subscribed, will send information to email or slack channel.
 
 * **Multiple Account Mode**: 
-  * A lambda function with subsequent modules for all your accounts. 
+  * A single lambda function with subsequent modules for all your accounts. 
   * Disabling remediation of control per account is not possible; it will be effective for all accounts.
  
 ![Images](/Images/RemediationMultiAccountModeV2.png?raw=true)
