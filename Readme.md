@@ -42,7 +42,8 @@ It deploys
       [ ] The role must have similar permissions as the one assigned to the role associated with lambda of base account
       [ ] Input that role in input parameters of Cloudformation template
   
-    * _How does multi account mode works?_
+   > * _How does multi account mode works?_
+   
         1. The main lambda  will make an API call to Qualys CloudView API to list all the failed controls for the account.
         2. It will verify if the account id mentioned in alert is same as the one where lambda function resides.
         3. If different, it will try to assume a role mentioned by customer during input parameters.
