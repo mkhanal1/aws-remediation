@@ -87,7 +87,6 @@ It needs following input parameters:( An example file enlisting parameters is [h
   * **RemediationFrequency:** Frequency for setting up remediation of Controls. [For proper syntax, check this link.](https://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events-schedule-expressions.html)
   * **EmailAddress:** email address for receiving logs about resources affected by controls being remediated
   * **SlackChannelWebHook:** Webhook to post logs in Slack channel
-  * **Mode:** single or multiple account mode
   * **AccountList:** comma delimeted list of accounts
 
 
