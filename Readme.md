@@ -23,12 +23,12 @@ It deploys
    * Disabling remediation of control per account is possible.
 ![](/Images/RemediationSingleAccountModeV2.png?raw=true)
 
-* _How does single account mode works?_
-    1. The main lambda  will make an API call to Qualys CloudView API to list all the failed controls for the account.
-    2. Based on the control id, the remediation module will be called.
-    3. The module, if present, will take the remediation action specified in the table below.
-    4. The module will send the logs to main lambda, which sends it to Output SNS topic.
-    5. The SNS topic, if subscribed, will send information to email or slack channel.
+    * _How does single account mode works?_
+        1. The main lambda  will make an API call to Qualys CloudView API to list all the failed controls for the account.
+        2. Based on the control id, the remediation module will be called.
+        3. The module, if present, will take the remediation action specified in the table below.
+        4. The module will send the logs to main lambda, which sends it to Output SNS topic.
+        5. The SNS topic, if subscribed, will send information to email or slack channel.
 
 * **Multiple Account Mode**: 
   * A lambda function with subsequent modules for all your accounts. 
@@ -36,21 +36,21 @@ It deploys
  
 ![Images](/Images/RemediationMultiAccountModeV2.png?raw=true)
 
-* _Prerequisites for Multiple account mode_
-   * A new cross account role must be created in sub accounts for the base account
-   * The role must have similar permissions as the one assigned to the role associated with lambda of base account
-   * Input that role in input parameters of Cloudformation template
+    * _Prerequisites for Multiple account mode_
+      * A new cross account role must be created in sub accounts for the base account
+      * The role must have similar permissions as the one assigned to the role associated with lambda of base account
+      * Input that role in input parameters of Cloudformation template
   
-* _How does multi account mode works?_
+    * _How does multi account mode works?_
 
-    1. The main lambda  will make an API call to Qualys CloudView API to list all the failed controls for the account.
-    2. It will verify if the account id mentioned in alert is same as the one where lambda function resides.
-    3. If different, it will try to assume a role mentioned by customer during input parameters.
-    4. if success, STS will return credentials/keys to assume that role for a specified period.
-    5. A session is created and Based on the control id, the remediation module will be called and that session will be passed as input.
-    5. The module, if present, will take the remediation action specified in the table below.
-    6. The module will send the logs to main lambda, which sends it to Output SNS topic.
-    7. The SNS topic, if subscribed, will send information to email or slack channel.
+        1. The main lambda  will make an API call to Qualys CloudView API to list all the failed controls for the account.
+        2. It will verify if the account id mentioned in alert is same as the one where lambda function resides.
+        3. If different, it will try to assume a role mentioned by customer during input parameters.
+        4. if success, STS will return credentials/keys to assume that role for a specified period.
+        5. A session is created and Based on the control id, the remediation module will be called and that session will be passed as           input.
+        6. The module, if present, will take the remediation action specified in the table below.
+        7. The module will send the logs to main lambda, which sends it to Output SNS topic.
+        8. The SNS topic, if subscribed, will send information to email or slack channel.
 
 ## Controls supported and proposed remediations against them
 CID	|	CONTROL NAME	|	SERVICE	|	Remediation|
@@ -77,7 +77,7 @@ CID	|	CONTROL NAME	|	SERVICE	|	Remediation|
 ## Usage
 [![Launch Stack](https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=QualysRemediation&templateURL=https://s3.amazonaws.com/my-great-stack.json)
 
-It needs following input parameters:
+It needs following input parameters:( An example file enlisting parameters is [here](/Config/parameters.json) )
 
 * **QualysUsername:** Qualys username to call CloudView API to download the evaluation results
 * **QualysPassword:** Qualys password to call CloudView API to download the evaluation results
@@ -87,6 +87,8 @@ It needs following input parameters:
 * **SlackChannelWebHook:** Webhook to post logs in Slack channel
 * **Mode:** single or multiple account mode
 * **AccountList:** comma delimeted list of accounts
+
+
 
 ## FAQ
 1. Do we need to provide extra permissions to already existing Qualys role?
