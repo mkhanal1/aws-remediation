@@ -9,23 +9,12 @@ _**THIS SCRIPT IS PROVIDED TO YOU "AS IS."  TO THE EXTENT PERMITTED BY LAW, QUAL
 ## Description
 This Cloudformation Template deploys a lambda function and subsequent modules against each controls.
 
-It needs following input parameters:
-
-* **QualysUsername:** Qualys username to call CloudView API to download the evaluation results
-* **QualysPassword:** Qualys password to call CloudView API to download the evaluation results
-* **QualysBaseUrl:** Qualys baseurl to download the evaluation results
-* **RemediationFrequency:** Frequency for setting up remediation of Controls. [For proper syntax, check this link.](https://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events-schedule-expressions.html)
-* **EmailAddress:** email address for receiving logs about resources affected by controls being remediated
-* **SlackChannelWebHook:** Webhook to post logs in Slack channel
-* **Mode:** single or multiple account mode
-* **AccountList:** comma delimeted list of accounts
-
 It deploys
 
-* A main lambda function and associated role 
-* ControlID remediation modules
-* A CloudWatch Event and permission to invoke lambda
-* A output SNS Topic and associated sns policy
+1. **A main lambda function and associated role** 
+2. **ControlID remediation modules**
+3. **A CloudWatch Event and permission to invoke lambda**
+4. **A output SNS Topic and associated sns policy**
 
 ## Different Modes
 
@@ -87,6 +76,17 @@ CID	|	CONTROL NAME	|	SERVICE	|	Remediation|
 
 ## Usage
 [![Launch Stack](https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=QualysRemediation&templateURL=https://s3.amazonaws.com/my-great-stack.json)
+
+It needs following input parameters:
+
+* **QualysUsername:** Qualys username to call CloudView API to download the evaluation results
+* **QualysPassword:** Qualys password to call CloudView API to download the evaluation results
+* **QualysBaseUrl:** Qualys baseurl to download the evaluation results
+* **RemediationFrequency:** Frequency for setting up remediation of Controls. [For proper syntax, check this link.](https://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events-schedule-expressions.html)
+* **EmailAddress:** email address for receiving logs about resources affected by controls being remediated
+* **SlackChannelWebHook:** Webhook to post logs in Slack channel
+* **Mode:** single or multiple account mode
+* **AccountList:** comma delimeted list of accounts
 
 ## FAQ
 1. Do we need to provide extra permissions to already existing Qualys role?
