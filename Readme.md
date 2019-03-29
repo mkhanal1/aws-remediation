@@ -37,7 +37,7 @@ It deploys
  
 ![Images](/Images/RemediationMultiAccountModeV2.png?raw=true)
 
-    * _Prerequisites for Multiple account mode_
+   > * _Prerequisites for Multiple account mode_
       [ ] A new cross account role must be created in sub accounts for the base account
       [ ] The role must have similar permissions as the one assigned to the role associated with lambda of base account
       [ ] Input that role in input parameters of Cloudformation template
