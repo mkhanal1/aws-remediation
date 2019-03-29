@@ -23,7 +23,7 @@ It deploys
    * Disabling remediation of control per account is possible.
 ![](/Images/RemediationSingleAccountModeV2.png?raw=true)
 
-      * _How does single account mode works?_
+    * _How does single account mode works?_
         1. The main lambda  will make an API call to Qualys CloudView API to list all the failed controls for the account.
         2. Based on the control id, the remediation module will be called.
         3. The module, if present, will take the remediation action specified in the table below.
@@ -36,13 +36,12 @@ It deploys
  
 ![Images](/Images/RemediationMultiAccountModeV2.png?raw=true)
 
-   * _Prerequisites for Multiple account mode_
+    * _Prerequisites for Multiple account mode_
       1. A new cross account role must be created in sub accounts for the base account
       2. The role must have similar permissions as the one assigned to the role associated with lambda of base account
       3. Input that role in input parameters of Cloudformation template
   
-   * _How does multi account mode works?_
-
+    * _How does multi account mode works?_
         1. The main lambda  will make an API call to Qualys CloudView API to list all the failed controls for the account.
         2. It will verify if the account id mentioned in alert is same as the one where lambda function resides.
         3. If different, it will try to assume a role mentioned by customer during input parameters.
