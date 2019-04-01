@@ -13,7 +13,8 @@ Here's an overview of this repository and how they map to different sections:
   <tr>
     <th rowspan="3" width="20%"> 
     	Understand ⚔ <br> 
-    	<a href="#Description"><img src="/Images/moduel1.png" alt="module 1" height="90" width="140" width="150" width="185"></a>
+    	<a href="#Description"><img src="/Images/moduel1.png" alt="Description" height="90" width="140" width="150" width="185"></a>
+	<a href="#Different-Deployment-Modes"><img src="/Images/module3.png" alt="module 3" height="90" width="140" width="150" width="185"></a>
 	 </th>
     <th width="60%">
     	<span style="font-weight:bold">Deploy 🏰</span> <br> 
