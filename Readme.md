@@ -14,41 +14,31 @@ Here's an overview of this repository and how they map to different sections:
     <th rowspan="3" width="20%"> 
     	Understand ⚔ <br> 
     	<a href="#Description"><img src="/Images/moduel1.png" alt="Description" height="90" width="140" width="150" width="185"></a>
-	<a href="#Different-Deployment-Modes"><img src="/Images/module3.png" alt="module 3" height="90" width="140" width="150" width="185"></a>
+	<a href="#Different-Deployment-Modes"><img src="/Images/module3.png" alt="Deployment Options" height="90" width="140" width="150" width="185"></a>
 	 </th>
     <th width="60%">
     	<span style="font-weight:bold">Deploy 🏰</span> <br> 
-    	<a href="#Usage"><img src="/Images/module2.png" alt="module 2" height="90" width="140" width="150" width="185"></a>
-    	<a href="/Release_notes"><img src="/Images/module3.png" alt="module 3" height="90" width="140" width="150" width="185"></a>
-    	<a href="#FAQ"><img src="/Images/module7.png" alt="module 3" height="90" width="140" width="150" width="185" ></a>
+    	<a href="#Usage"><img src="/Images/module2.png" alt="Usage" height="90" width="140" width="150" width="185"></a>
+    	<a href="/Release_notes"><img src="/Images/module3.png" alt="Release Notes" height="90" width="140" width="150" width="185"></a>
+    	<a href="#FAQ"><img src="/Images/module7.png" alt="FAQ" height="90" width="140" width="150" width="185" ></a>
     </th>
     <th width="20%" colspan="3" rowspan="3">Logging 🕶
-    	<a href="/Debug/Readme.md"><img src="/Images/module8.png" alt="module 3" height="90" width="140" width="150" width="185"></a>
+    	<a href="/Debug/Readme.md"><img src="/Images/module8.png" alt="Debugging" height="90" width="140" width="150" width="185"></a>
 </th>
   </tr>
   <tr >
     <td align="center" width="60%">
-    	<span style="font-weight:bold">Data 🏆</span><br> 	    
-    	<a href="docs/04-ssl-in-transit/"><img src="docs/images/module4.png" alt="module 4" height="90" width="140" width="150" width="185"></a>
+    	<span style="font-weight:bold">Advanced 🏆</span><br> 	    
+    	<a href="/Advanced/Readme.md"><img src="/Images/module4.png" alt="New Module or Action" height="90" width="140" width="150" width="185"></a>
     </td>
   </tr>
-  <tr>
-    <td align="center" width="60%"><span style="font-weight:bold">Infrastructure 🛡</span><br> 
- 		<a href="docs/05-usage-plan/"><img src="docs/images/module5.png" alt="module 5" height="90" width="140" width="150" width="185"></a>
-  		<a href="docs/06-waf/"><img src="docs/images/module6.png" alt="module 6" height="90" width="140" width="150" width="185"></a>
-	</td>
-    </tr>
 </table>
 
 Understand 	| Deploy | Debug | Advanced |
 ----|----|----|-----|
-[Description](#Description)	
-[Deployment Options](#Different-Deployment-Modes)
 [Controls Supported & Remediation](#Controls-supported-and-proposed-remediations-against-them) |
 [Modules per ControlIDs](/Remediation/Readme.md)
 [Lambda Policy](/Config/lambdarole.yml) | 
-[Debugging](/Debug/Readme.md) |
-[Create new Module or action for the module](/Advanced/Readme.md) 
 
 ## Description
 This Cloudformation Template deploys a lambda function and subsequent modules against each controls.
