@@ -10,23 +10,23 @@ Here's an overview of this repository and how they map to different sections:
 <table style="text-align:center width:100%" align="center" >
   <tr>
     <th rowspan="3" width="20%"> 
-    	Understand  <br> 
-    	<a href="#Description">Description ⌛️ </a>
-	<a href="#Different-Deployment-Modes">Deployment Options 🐣 </a>
+    	Understand ⌛️  <br> 
+    	<a href="#Description">Description  </a>
+	<a href="#Different-Deployment-Modes">Deployment Options </a>
 	 </th>
     <th width="60%">
-    	<span style="font-weight:bold">Deploy</span> <br> 
+    	<span style="font-weight:bold">Deploy 🐣 </span> <br> 
     	<a href="#Usage">Usage, </a>
     	<a href="/Remediation/Readme.md">Modules Per ControlIDs, </a>
 	<a href="/Release_notes">Release Notes</a>
     </th>
-    <th width="20%" colspan="3" rowspan="3">FAQ & Logging
+    <th width="20%" colspan="3" rowspan="3">FAQ & Logging 🔎
     	<a href="/Debug/Readme.md">Debugging, </a>
 	<a href="/Debug/FAQ.md">FAQs</a>
 </th>
   </tr>
     <td align="center" width="60%">
-    	<span style="font-weight:bold">Add Module or Action</span><br> 	    
+    	<span style="font-weight:bold">Add Module or Action ⚡️</span><br> 	    
     	<a href="#Controls-supported-and-proposed-remediations-against-them">ControlIds, Remediation and Actions,</a>
 	<a href="/Advanced/Readme.md">Addition of New Module or Action</a>
     </td>
