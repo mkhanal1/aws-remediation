@@ -22,7 +22,7 @@ Here's an overview of this repository and how they map to different sections:
     </th>
     <th width="20%" colspan="3" rowspan="3">FAQ & Logging
     	<a href="/Debug/Readme.md">Debugging, </a>
-	<a href="#FAQ">FAQs</a>
+	<a href="/Debug/FAQ.md">FAQs</a>
 </th>
   </tr>
     <td align="center" width="60%">
