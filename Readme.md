@@ -24,21 +24,24 @@ Here's an overview of this repository and how they map to different sections:
     </th>
     <th width="20%" colspan="3" rowspan="3">Logging 🕶
     	<a href="/Debug/Readme.md"><img src="/Images/module8.png" alt="Debugging" height="90" width="140" width="150" width="185"></a>
+	<a href="/Remediation/Readme.md"><img src="/Images/module8.png" alt="Modules per ControlIDs" height="90" width="140" width="150" width="185"></a>
 </th>
   </tr>
   <tr >
     <td align="center" width="60%">
-    	<span style="font-weight:bold">Advanced 🏆</span><br> 	    
+    	<span style="font-weight:bold"> 🛡</span><br> 	    
     	<a href="/Advanced/Readme.md"><img src="/Images/module4.png" alt="New Module or Action" height="90" width="140" width="150" width="185"></a>
+    </td>
+  </tr>
+  <tr >
+    <td align="center" width="60%">
+    	<span style="font-weight:bold">Add Module or Action 🏆</span><br> 	    
+    	<a href="#Controls-supported-and-proposed-remediations-against-them"><img src="/Images/module4.png" alt="Supported Modules & actions" height="90" width="140" width="150" width="185"></a>
+	<a href="/Advanced/Readme.md"><img src="/Images/module4.png" alt="New Module or Action" height="90" width="140" width="150" width="185"></a>
     </td>
   </tr>
 </table>
 
-Understand 	| Deploy | Debug | Advanced |
-----|----|----|-----|
-[Controls Supported & Remediation](#Controls-supported-and-proposed-remediations-against-them) |
-[Modules per ControlIDs](/Remediation/Readme.md)
-[Lambda Policy](/Config/lambdarole.yml) | 
 
 ## Description
 This Cloudformation Template deploys a lambda function and subsequent modules against each controls.
