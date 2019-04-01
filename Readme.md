@@ -69,7 +69,8 @@ It deploys ==>
      - [ ] A new cross account role must be created in sub accounts for the base account.
      - [ ] The role must have similar permissions as the one assigned to the role associated with lambda of base account.
      - [ ] Input that role in input parameters of Cloudformation template.
-  
+ Note: Run this [CloudFormation template](/Config/QualysRemediationRole-Policy) using stacksets to create the role in child accounts.
+ 
    > * _How does this deployment work?_
    
         1. The main lambda  will make an API call to Qualys CloudView API to list all the failed controls for the account.
