@@ -6,11 +6,19 @@ Auto remediation of resources failed against the Controls specified in Qualys Cl
 ## License
 _**THIS SCRIPT IS PROVIDED TO YOU "AS IS."  TO THE EXTENT PERMITTED BY LAW, QUALYS HEREBY DISCLAIMS ALL WARRANTIES AND LIABILITY FOR THE PROVISION OR USE OF THIS SCRIPT.  IN NO EVENT SHALL THESE SCRIPTS BE DEEMED TO BE CLOUD SERVICES AS PROVIDED BY QUALYS**_
 
-## Here's an overview of this repository and how they map to different sections:
+## Table of Contents
+Here's an overview of this repository and how they map to different sections:
 
-Name 	|	CONTROL NAME	|
-----| --------------|
-[Description](#Description)	|	 Ensure 	|
+Name 	|
+----|
+[Description](#Description)	|
+[Deployment Options](#Different Deployment Modes)
+[Controls Supported & Remediation](#Controls supported and proposed remediations against them)
+[Usage](#Usage)
+[Release Notes](/Release_notes)
+[FAQ](#FAQ)
+[Modules per ControlIDs](/Remediation)
+[Lambda Policy](/Config/lambdarole.yml)
 
 ## Description
 This Cloudformation Template deploys a lambda function and subsequent modules against each controls.
