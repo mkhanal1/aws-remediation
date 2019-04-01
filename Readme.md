@@ -9,17 +9,18 @@ _**THIS SCRIPT IS PROVIDED TO YOU "AS IS."  TO THE EXTENT PERMITTED BY LAW, QUAL
 ## Table of Contents
 Here's an overview of this repository and how they map to different sections:
 
-Name 	|
-----|
-[Description](#Description)	|
+Understand 	| Deploy | Debug | Advanced |
+----|----|----|-----|
+[Description](#Description)	
 [Deployment Options](#Different-Deployment-Modes)
-[Controls Supported & Remediation](#Controls-supported-and-proposed-remediations-against-them)
+[Controls Supported & Remediation](#Controls-supported-and-proposed-remediations-against-them) |
 [Usage](#Usage)
 [Release Notes](/Release_notes)
 [FAQ](#FAQ)
 [Modules per ControlIDs](/Remediation/Readme.md)
-[Lambda Policy](/Config/lambdarole.yml)
-[Debugging](/Debug/Readme.md)
+[Lambda Policy](/Config/lambdarole.yml) | 
+[Debugging](/Debug/Readme.md) |
+[Create new Module or action for the module](/Advanced/Readme.md) 
 
 ## Description
 This Cloudformation Template deploys a lambda function and subsequent modules against each controls.
@@ -73,8 +74,8 @@ It deploys ==>
 
 ## Usage
 
-#### Get started and deploy this into my AWS account
-You can launch this CloudFormation stack in the US East 1 (North Virginia) Region in your account:
+#### Get started and deploy this into your AWS account
+You can launch this CloudFormation stack in the US East 1 (North Virginia) Region in your account 
 [![Launch Stack](https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=QualysRemediation&templateURL=https://s3.amazonaws.com/my-great-stack.json)
 
 It needs following input parameters:( An example file enlisting parameters is [here](/Config/parameters.yml).)
