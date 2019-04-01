@@ -18,12 +18,12 @@ It deploys ==>
 
 ## Different Deployment Modes
 
-* **Per Account Mode**: 
+* **A lambda function per account**: 
    * A single lambda function with subsequent modules per account. 
    * Disabling remediation of control per account is possible.
 ![](/Images/RemediationSingleAccountModeV2.png?raw=true)
 
-   > * _How does single account mode works?_
+   > * _How does this deployment work?_
    
         1. The main lambda  will make an API call to Qualys CloudView API to list all the failed controls for the account.
         2. Based on the control id, the remediation module will be called.
@@ -31,19 +31,19 @@ It deploys ==>
         4. The module will send the logs to main lambda, which sends it to Output SNS topic.
         5. The SNS topic, if subscribed, will send information to email or slack channel.
 
-* **Multiple Account Mode**: 
+* **A lambda function across multiple accounts**: 
   * A single lambda function with subsequent modules for all your accounts. 
   * Disabling remediation of control per account is not possible; it will be effective for all accounts.
  
 ![Images](/Images/RemediationMultiAccountModeV2.png?raw=true)
 
-   > * _Prerequisites for Multiple account mode_
+   > * _Prerequisites_
    
      - [ ] A new cross account role must be created in sub accounts for the base account.
      - [ ] The role must have similar permissions as the one assigned to the role associated with lambda of base account.
      - [ ] Input that role in input parameters of Cloudformation template.
   
-   > * _How does multi account mode works?_
+   > * _How does this deployment work?_
    
         1. The main lambda  will make an API call to Qualys CloudView API to list all the failed controls for the account.
         2. It will verify if the account id mentioned in alert is same as the one where lambda function resides.
