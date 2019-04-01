@@ -12,7 +12,7 @@ Here's an overview of this repository and how they map to different sections:
 Name 	|
 ----|
 [Description](#Description)	|
-[Deployment Options](#"Different Deployment Modes")
+[Deployment Options](#Different-Deployment-Modes)
 [Controls Supported & Remediation](#"Controls supported and proposed remediations against them")
 [Usage](#Usage)
 [Release Notes](/Release_notes)
