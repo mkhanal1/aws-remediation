@@ -104,20 +104,21 @@ It needs following input parameters:( An example file enlisting parameters is [h
   * **AccountList:** comma delimeted list of accounts
   * **ControlsIdforRemediation:** ControlId for which you want to enable remediation
 
-## Sample SNS Output message
+## Debugging
 
+> A sample SNS message
 ```
 -------------------------------------------------
-for 457721770691:
+for 123456789123:
 The Control 41 is sent for remediation 
-	 sg-0140f585a6a580570 in ap-northeast-2 is being remediated 
-	 sg-0342a4f68a6aec8ee in ap-northeast-2 is being remediated 
+	 sg-9876f5852ny580570 in ap-northeast-2 is being remediated 
+	 sg-1234a4f682nyec8ee in ap-northeast-2 is being remediated 
 
-for 383031258652:
+for 987654321987:
 The Control 41 is sent for remediation 
-	 sg-d85575a6 in us-west-2 is being remediated 
-	 sg-cfae4686 in us-east-1 is being remediated 
-	 sg-0087b7590d30e7380 in us-east-1 is being remediated 
+	 sg-gdj567sg in us-west-2 is being remediated 
+	 sg-98gmn2s3 in us-east-1 is being remediated 
+	 sg-0087987t0d30e6980 in us-east-1 is being remediated 
 -------------------------------------------------
 ```
 
