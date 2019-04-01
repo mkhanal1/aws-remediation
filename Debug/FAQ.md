@@ -6,6 +6,6 @@
   3. How will the new update/modules be cascaded to us?
       - This GitHub Readme will be updated with new modules in [Remediation](/Remediation) folder which can be imported under their Remediation folder in Lambda or customer can re run the CloudFormation template. The information about the change are added in [Release Notes](/Release_notes)
   4. How can we disable remediation for few controls?
-      - Yes, you can Change the SSM Parameter named ControlIDs to include only ControlIds for which you want remediation. For a single lambda accross multiple account , the disabled remediation for controls will be applicable for all accounts.
+      - Yes, you can Change the SSM Parameter named ControlsIdforRemediation to include only ControlIds for which you want remediation. For a single lambda accross multiple account , the disabled remediation for controls will be applicable for all accounts.
   5. How can we debug the issue related to the remediation functions?
       - You can look into the SNS message and Cloudwatch logs to debug further. The sample is provided [here](/Debug/Reademe.md).
