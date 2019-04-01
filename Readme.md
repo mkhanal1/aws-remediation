@@ -79,7 +79,7 @@ CID	|	CONTROL NAME	|	SERVICE	|	Remediation|
 ## Usage
 [![Launch Stack](https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=QualysRemediation&templateURL=https://s3.amazonaws.com/my-great-stack.json)
 
-It needs following input parameters:( An example file enlisting parameters is [here](/Config/parameters.json).)
+It needs following input parameters:( An example file enlisting parameters is [here](/Config/parameters.yml).)
 
   * **QualysUsername:** Qualys username to call CloudView API to download the evaluation results
   * **QualysPassword:** Qualys password to call CloudView API to download the evaluation results
@@ -94,7 +94,7 @@ It needs following input parameters:( An example file enlisting parameters is [h
 
 ## FAQ
   1. Do we need to provide extra permissions to already existing Qualys role?
-      - No. However, a new role will be created for lambda function so that it can act on resources to remediate them. The list of permissions is mentioned in [lambdarole.json](/Config/lambdarole.json) file.
+      - No. However, a new role will be created for lambda function so that it can act on resources to remediate them. The list of permissions is mentioned in [lambdarole.yml](/Config/lambdarole.yml) file.
   2. Can we add our own modules?
       - Yes, we can build your own lambda functions against unsupported modules or build a different remediation action against the supported module. You will have to store it under [Remediation](/Remediation) folder.
   3. How will the new update/modules be cascaded to us?
