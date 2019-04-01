@@ -11,8 +11,8 @@ Here's an overview of this repository and how they map to different sections:
   <tr>
     <th rowspan="3" width="20%"> 
     	Understand  <br> 
-    	<a href="#Description">Description </a>
-	<a href="#Different-Deployment-Modes">Deployment Options</a>
+    	<a href="#Description">Description ⌛️ </a>
+	<a href="#Different-Deployment-Modes">Deployment Options 🐣 </a>
 	 </th>
     <th width="60%">
     	<span style="font-weight:bold">Deploy</span> <br> 
