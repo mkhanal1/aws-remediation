@@ -121,10 +121,118 @@ The Control 41 is sent for remediation
 	 sg-0087987t0d30e6980 in us-east-1 is being remediated 
 -------------------------------------------------
 ```
+> A sample CloudWatch logs
+```
+START RequestId: 78eefa12-4a2d-4efb-9cda-7d553a8e97e5 Version: $LATEST
+[INFO]	2019-03-29T11:01:34.367Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Found credentials in environment variables.
+[INFO]	2019-03-29T11:01:35.9Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Starting new HTTPS connection (1): ssm.ap-northeast-2.amazonaws.com
+[INFO]	2019-03-29T11:01:35.489Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Starting new HTTPS connection (1): ssm.ap-northeast-2.amazonaws.com
+[INFO]	2019-03-29T11:01:42.303Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Rule violation is found for: 41 
 
+[INFO]	2019-03-29T11:01:42.303Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Found Remediation module 41 for resource sg-0140f585a6a580570, invoking it.
+[INFO]	2019-03-29T11:01:42.303Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	[
+{
+    "settingName": "VPC Id",
+    "actualValue": "vpc-079e856f",
+    "expectedValue": ""
+}
+,
+{
+    "settingName": "Network: 0.0.0.0/0",
+    "actualValue": "Port : 22",
+    "expectedValue": ""
+}
+,
+{
+    "settingName": "Network: ::/0",
+    "actualValue": "Port : 22",
+    "expectedValue": ""
+}
+]
+[INFO]	2019-03-29T11:01:42.390Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Found credentials in environment variables.
+[INFO]	2019-03-29T11:01:43.389Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Starting new HTTPS connection (1): ec2.ap-northeast-2.amazonaws.com
+[INFO]	2019-03-29T11:01:43.968Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Starting new HTTPS connection (1): ec2.ap-northeast-2.amazonaws.com
+[INFO]	2019-03-29T11:01:44.308Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	resource sg-0140f585a6a580570 is remediated against module 41
+[INFO]	2019-03-29T11:01:44.308Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Found Remediation module 41 for resource sg-0342a4f68a6aec8ee, invoking it.
+[INFO]	2019-03-29T11:01:44.308Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	[
+{
+    "settingName": "VPC Id",
+    "actualValue": "vpc-079e856f",
+    "expectedValue": ""
+}
+,
+{
+    "settingName": "Network: 0.0.0.0/0",
+    "actualValue": "Port : 22",
+    "expectedValue": ""
+}
+,
+{
+    "settingName": "Network: ::/0",
+    "actualValue": "Port : 22",
+    "expectedValue": ""
+}
+]
+[INFO]	2019-03-29T11:01:44.430Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Starting new HTTPS connection (1): ec2.ap-northeast-2.amazonaws.com
+[INFO]	2019-03-29T11:01:45.328Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Starting new HTTPS connection (1): ec2.ap-northeast-2.amazonaws.com
+[INFO]	2019-03-29T11:01:45.667Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	resource sg-0342a4f68a6aec8ee is remediated against module 41
+[INFO]	2019-03-29T11:01:45.768Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Starting new HTTPS connection (1): sts.ap-northeast-2.amazonaws.com
+[INFO]	2019-03-29T11:01:45.990Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Starting new HTTPS connection (1): ssm.ap-northeast-2.amazonaws.com
+[INFO]	2019-03-29T11:01:52.182Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Rule violation is found for: 41 
 
-
-## Debug using CloudWatch Logs
+[INFO]	2019-03-29T11:01:52.187Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Found Remediation module 41 for resource sg-d85575a6, invoking it.
+[INFO]	2019-03-29T11:01:52.207Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	[
+{
+    "settingName": "VPC Id",
+    "actualValue": "vpc-39341740",
+    "expectedValue": ""
+}
+,
+{
+    "settingName": "Network: 0.0.0.0/0",
+    "actualValue": "All",
+    "expectedValue": ""
+}
+]
+[INFO]	2019-03-29T11:01:52.929Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Starting new HTTPS connection (1): ec2.us-west-2.amazonaws.com
+[INFO]	2019-03-29T11:01:53.878Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	resource sg-d85575a6 is remediated against module 41
+[INFO]	2019-03-29T11:01:53.878Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Found Remediation module 41 for resource sg-cfae4686, invoking it.
+[INFO]	2019-03-29T11:01:53.907Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	[
+{
+    "settingName": "VPC Id",
+    "actualValue": "vpc-ceacefb7",
+    "expectedValue": ""
+}
+,
+{
+    "settingName": "Network: 0.0.0.0/0",
+    "actualValue": "Port : 0-65535",
+    "expectedValue": ""
+}
+]
+[INFO]	2019-03-29T11:01:54.87Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Starting new HTTPS connection (1): ec2.us-east-1.amazonaws.com
+[INFO]	2019-03-29T11:01:55.65Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	resource sg-cfae4686 is remediated against module 41
+[INFO]	2019-03-29T11:01:55.65Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Found Remediation module 41 for resource sg-0087b7590d30e7380, invoking it.
+[INFO]	2019-03-29T11:01:55.65Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	[
+{
+    "settingName": "VPC Id",
+    "actualValue": "vpc-ceacefb7",
+    "expectedValue": ""
+}
+,
+{
+    "settingName": "Network: 0.0.0.0/0",
+    "actualValue": "Port : 0-65535",
+    "expectedValue": ""
+}
+]
+[INFO]	2019-03-29T11:01:55.227Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Starting new HTTPS connection (1): ec2.us-east-1.amazonaws.com
+[INFO]	2019-03-29T11:01:56.524Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	resource sg-0087b7590d30e7380 is remediated against module 41
+[INFO]	2019-03-29T11:01:56.650Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Starting new HTTPS connection (1): sns.ap-northeast-2.amazonaws.com
+[INFO]	2019-03-29T11:01:56.884Z	78eefa12-4a2d-4efb-9cda-7d553a8e97e5	SNS message posted successfully
+END RequestId: 78eefa12-4a2d-4efb-9cda-7d553a8e97e5
+REPORT RequestId: 78eefa12-4a2d-4efb-9cda-7d553a8e97e5	Duration: 22689.49 ms	Billed Duration: 22700 ms Memory Size: 128 MB	Max Memory Used: 101 MB	
+```
 
 ## FAQ
   1. Do we need to provide extra permissions to already existing Qualys role?
