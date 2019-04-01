@@ -34,12 +34,14 @@ Here's an overview of this repository and how they map to different sections:
 
 
 ## Description
-This Cloudformation Template deploys a lambda function and subsequent modules against each controls.
+The aim of this repository is to build a solution which will remediate the common mistakes, non standard deployments and misconfigurations found in your AWS accounts as per the policy specified by AWS CIS Benchmarks & Best Practices Policy researched by Qualys. We have built a CloudFormation Template which will setup this solution for you.
+
+This template deploys remediation modules against each [supported controls](/Remediation/Readme.md).
 
 It deploys ==>
 
   1. **A main lambda function and associated role** 
-  2. [**ControlID remediation modules**](/Remediation)
+  2. [**Remediation module for supported ControlIDs**](/Remediation)
   3. **A CloudWatch Event and permission to invoke lambda**
   4. **A output SNS Topic and associated sns policy**
 
