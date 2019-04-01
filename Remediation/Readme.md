@@ -19,13 +19,13 @@ CID	|	CONTROL NAME	|	SERVICE	|	Remedaition	|	Action	|
 16	|	 Ensure hardware MFA is enabled for the root account 	|	IAM	|	No	|	NA	|
 17	|	Ensure IAM policies are attached only to groups or roles	|	IAM	|	No	|	NA	|
 18	|	Avoid the use of the root account	|	IAM	|	No	|	NA	|
-"[19](/Remediation/19.py)	"	|	 Ensure CloudTrail is enabled in all regions 	|	CLOUD_TRAIL	|	Yes	|	"	Enable CloudTrail "	|
-"[20](/Remediation/20.py)	"	|	Ensure CloudTrail log file validation is enabled	|	CLOUD_TRAIL	|	Yes	|	"	Enable CloudTrail log file validation "	|
+[19](/Remediation/19.py)	|	 Ensure CloudTrail is enabled in all regions 	|	CLOUD_TRAIL	|	Yes	|		Enable CloudTrail 	|
+[20](/Remediation/20.py)		|	Ensure CloudTrail log file validation is enabled	|	CLOUD_TRAIL	|	Yes	|		Enable CloudTrail log file validation "	|
 21	|	Ensure the S3 bucket CloudTrail logs to is not publicly accessible	|	CLOUD_TRAIL	|	No	|	NA	|
 22	|	Ensure CloudTrail trails are integrated with CloudWatch Logs	|	CLOUD_TRAIL	|	No	|	NA	|
-"[23](/Remediation/23.py)	"	|	Ensure AWS Config is enabled in all regions	|	CONFIG	|	Yes	|	"	Enable Config "	|
-24	|	"Ensure S3 bucket access logging is enabled on the CloudTrail S3
-bucket "	|	CLOUD_TRAIL	|	No	|	NA	|
+[23](/Remediation/23.py)		|	Ensure AWS Config is enabled in all regions	|	CONFIG	|	Yes	|		Enable Config	|
+24	|	Ensure S3 bucket access logging is enabled on the CloudTrail S3
+bucket 	|	CLOUD_TRAIL	|	No	|	NA	|
 25	|	Ensure CloudTrail logs are encrypted at rest using KMS CMKs 	|	CLOUD_TRAIL	|	No	|	NA	|
 26	|	Ensure rotation for customer created CMKs is enabled	|	IAM	|	No	|	NA	|
 27	|	Ensure a log metric filter and alarm exist for unauthorized API calls	|	CLOUD_TRAIL	|	No	|	NA	|
@@ -42,20 +42,20 @@ bucket "	|	CLOUD_TRAIL	|	No	|	NA	|
 38	|	Ensure a log metric filter and alarm exist for changes to network gateways	|	CLOUD_TRAIL	|	No	|	NA	|
 39	|	Ensure a log metric filter and alarm exist for route table changes	|	CLOUD_TRAIL	|	No	|	NA	|
 40	|	Ensure a log metric filter and alarm exist for VPC changes	|	CLOUD_TRAIL	|	No	|	NA	|
-"[41](/Remediation/41.py)	"	|	Ensure no security groups allow ingress from 0.0.0.0/0 to port 22	|	VPC	|	Yes	|	"	Remove rule containing port 22 from security group "	|
-"[42](/Remediation/42.py)	"	|	Ensure no security groups allow ingress from 0.0.0.0/0 to port 3389	|	VPC	|	Yes	|	"	Remove rule containing port 3389 from security group "	|
-"[43](/Remediation/43.py)	"	|	Ensure VPC flow logging is enabled in all VPCs	|	VPC	|	Yes	|	"	Enable VPC flow logging "	|
-"[44](/Remediation/44.py)	"	|	Ensure the default security group of every VPC restricts all traffic	|	VPC	|	Yes	|	"	Remove all inbound rules from default security group "	|
-"[45](/Remediation/45.py)	"	|	S3 Bucket Access Control List Grant Access to Everyone or Authenticated Users	|	S3	|	Yes	|	"	yes "	|
-"[46](/Remediation/46.py)	"	|	Ensure S3 Bucket Policy does not allow anonymous (public) access to S3 bucket	|	S3	|	Yes	|	"	yes "	|
-"[47](/Remediation/47.py)	"	|	Ensure access logging is enabled for S3 buckets	|	S3	|	Yes	|	"	Enable access logging "	|
-"[48](/Remediation/48.py)	"	|	Ensure versioning is enabled for S3 buckets	|	S3	|	Yes	|	"	Enable versioning "	|
+[41](/Remediation/41.py)	|	Ensure no security groups allow ingress from 0.0.0.0/0 to port 22	|	VPC	|	Yes	|	Remove rule containing port 22 from security group 	|
+[42](/Remediation/42.py)	|	Ensure no security groups allow ingress from 0.0.0.0/0 to port 3389	|	VPC	|	Yes	|		Remove rule containing port 3389 from security group 	|
+[43](/Remediation/43.py)	|	Ensure VPC flow logging is enabled in all VPCs	|	VPC	|	Yes	|		Enable VPC flow logging 	|
+[44](/Remediation/44.py)	|	Ensure the default security group of every VPC restricts all traffic	|	VPC	|	Yes	|		Remove all inbound rules from default security group 	|
+[45](/Remediation/45.py)	|	S3 Bucket Access Control List Grant Access to Everyone or Authenticated Users	|	S3	|	Yes	|		yes 	|
+[46](/Remediation/46.py)	|	Ensure S3 Bucket Policy does not allow anonymous (public) access to S3 bucket	|	S3	|	Yes	|		yes 	|
+[47](/Remediation/47.py)	|	Ensure access logging is enabled for S3 buckets	|	S3	|	Yes	|		Enable access logging 	|
+[48](/Remediation/48.py)	|	Ensure versioning is enabled for S3 buckets	|	S3	|	Yes	|		Enable versioning 	|
 49	|	Ensure a support role has been created to manage incidents with AWS Support	|	IAM	|	No	|	NA	|
 50	|	Ensure IAM policies that allow full administrative privileges are not created	|	IAM	|	No	|	NA	|
-"[51](/Remediation/51.py)	"	|	Ensure that Public Accessibility is set to No for Database Instances	|	RDS	|	Yes	|	"	Disable public accessibility for RDS instances "	|
-"[52](/Remediation/52.py)	"	|	Ensure DB snapshot is not publicly visible	|	RDS	|	Yes	|	"	Disable public visibility of DB snapshot "	|
-"[53](/Remediation/53.py)	"	|	Ensure Encryption is enabled for the database Instance	|	RDS	|	Yes	|	"	Enable encryption "	|
-"[54](/Remediation/54.py)	"	|	Ensure database Instance snapshot is encrypted	|	RDS	|	Yes	|	"	Enable encryption "	|
-"[55](/Remediation/55.py)	"	|	Ensure auto minor version upgrade is enabled for a Database Instance	|	RDS	|	Yes	|	"	yes "	|
-"[56](/Remediation/56.py)	"	|	Ensure database Instance is not listening on to a standard/default port	|	RDS	|	Yes	|	"	yes "	|
-"[57](/Remediation/57.py)	"	|	Ensure that bucket policy enforces encryption in transit	|	S3	|	Yes	|	"	Enable encryption "	|
+[51](/Remediation/51.py)	|	Ensure that Public Accessibility is set to No for Database Instances	|	RDS	|	Yes	|		Disable public accessibility for RDS instances 	|
+[52](/Remediation/52.py)	|	Ensure DB snapshot is not publicly visible	|	RDS	|	Yes	|		Disable public visibility of DB snapshot	|
+[53](/Remediation/53.py)	|	Ensure Encryption is enabled for the database Instance	|	RDS	|	Yes	|		Enable encryption	|
+[54](/Remediation/54.py)	|	Ensure database Instance snapshot is encrypted	|	RDS	|	Yes	|		Enable encryption 	|
+[55](/Remediation/55.py)	|	Ensure auto minor version upgrade is enabled for a Database Instance	|	RDS	|	Yes	|		yes	|
+[56](/Remediation/56.py)	|	Ensure database Instance is not listening on to a standard/default port	|	RDS	|	Yes	|		yes 	|
+[57](/Remediation/57.py)		|	Ensure that bucket policy enforces encryption in transit	|	S3	|	Yes	|		Enable encryption 	|
