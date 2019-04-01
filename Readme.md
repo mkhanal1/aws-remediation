@@ -39,7 +39,7 @@ This Cloudformation Template deploys a lambda function and subsequent modules ag
 It deploys ==>
 
   1. **A main lambda function and associated role** 
-  2. **ControlID remediation modules**
+  2. [**ControlID remediation modules**](/Remediation)
   3. **A CloudWatch Event and permission to invoke lambda**
   4. **A output SNS Topic and associated sns policy**
 
