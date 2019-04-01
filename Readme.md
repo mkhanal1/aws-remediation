@@ -13,7 +13,7 @@ Name 	|
 ----|
 [Description](#Description)	|
 [Deployment Options](#Different-Deployment-Modes)
-[Controls Supported & Remediation](#"Controls supported and proposed remediations against them")
+[Controls Supported & Remediation](#Controls-supported-and-proposed-remediations-against-them)
 [Usage](#Usage)
 [Release Notes](/Release_notes)
 [FAQ](#FAQ)
