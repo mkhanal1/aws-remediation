@@ -1,0 +1,14 @@
+QualysUsername: quays99mk
+QualysPassword: PassW0rd!!Qualys
+QualysBaseUrl: https://qualysguard.qg2.apps.qualys.com
+RemediationFrequency: rate(4 hour)
+EmailAddress: emailaddress@qualys.com
+SlackChannelWebHook: https://hooks.slack.com/services/AVEHFUZG5/BLoLQ1R9W/beprhZWre5TNoijdNKVMEMMK
+AccountList:
+- 123456987654
+- 987456321456
+ControlsIdforRemediation:
+- 1
+- 41
+- 42
+- 56
