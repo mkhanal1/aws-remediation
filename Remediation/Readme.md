@@ -1,5 +1,5 @@
 ## Controls supported and proposed remediations against them
-CID	|	CONTROL NAME	|	SERVICE	|	Remedaition	|	Action	|
+CID	|	CONTROL NAME	|	SERVICE	|	REMEDIATION	|	ACTION	|
 ----|-----|-----|-----|-----|
 1	|	Ensure multi-factor authentication (MFA) is enabled for all IAM users that have a console password	|	IAM	|	No	|	NA	|
 2	|	Ensure console credentials unused for 90 days or greater are disabled	|	IAM	|	No	|	NA	|
