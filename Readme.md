@@ -106,7 +106,8 @@ It needs following input parameters:( An example file enlisting parameters is [h
 
 ## Sample SNS Output message
 
-'''-------------------------------------------------
+```
+-------------------------------------------------
 for 457721770691:
 The Control 41 is sent for remediation 
 	 sg-0140f585a6a580570 in ap-northeast-2 is being remediated 
@@ -117,7 +118,8 @@ The Control 41 is sent for remediation
 	 sg-d85575a6 in us-west-2 is being remediated 
 	 sg-cfae4686 in us-east-1 is being remediated 
 	 sg-0087b7590d30e7380 in us-east-1 is being remediated 
--------------------------------------------------'''
+-------------------------------------------------
+```
 
 
 
