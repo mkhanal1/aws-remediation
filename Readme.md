@@ -12,7 +12,7 @@ Here's an overview of this repository and how they map to different sections:
     <th rowspan="3" width="20%"> 
     	Understand ⌛️  <br> 
     	<a href="#Description">Description  </a>
-	<a href="#Different-Deployment-Modes">Deployment Options </a>
+	<a href="#Different-Deployment-Options">Deployment Options </a>
 	 </th>
     <th width="60%">
     	<span style="font-weight:bold">Deploy 🐣 </span> <br> 
@@ -43,7 +43,7 @@ It deploys ==>
   3. **A CloudWatch Event and permission to invoke lambda**
   4. **A output SNS Topic and associated sns policy**
 
-## Different Deployment Modes
+## Different Deployment Options
 
 * **A lambda function per account**: 
    * A single lambda function with subsequent modules per account. 
