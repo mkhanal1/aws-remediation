@@ -72,6 +72,9 @@ It deploys ==>
 
 
 ## Usage
+
+#### Get started and deploy this into my AWS account
+You can launch this CloudFormation stack in the US East 1 (North Virginia) Region in your account:
 [![Launch Stack](https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=QualysRemediation&templateURL=https://s3.amazonaws.com/my-great-stack.json)
 
 It needs following input parameters:( An example file enlisting parameters is [here](/Config/parameters.yml).)
