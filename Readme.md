@@ -12,17 +12,17 @@ Here's an overview of this repository and how they map to different sections:
 <table style="text-align:center width:100%" align="center" >
   <tr>
     <th rowspan="3" width="20%"> 
-    	Understand the Remediation ⚔ <br> 
+    	Understand ⚔ <br> 
     	<a href="#Description"><img src="/Images/moduel1.png" alt="module 1" height="90" width="140" width="150" width="185"></a>
 	 </th>
     <th width="60%">
-    	<span style="font-weight:bold">Code 🏰</span> <br> 
-    	<a href="docs/02-add-secrets-manager/"><img src="docs/images/module2.png" alt="module 2" height="90" width="140" width="150" width="185"></a>
-    	<a href="docs/03-input-validation/"><img src="docs/images/module3.png" alt="module 3" height="90" width="140" width="150" width="185"></a>
-    	<a href="docs/07-dependency-vulnerability/"><img src="docs/images/module7.png" alt="module 3" height="90" width="140" width="150" width="185" ></a>
+    	<span style="font-weight:bold">Deploy 🏰</span> <br> 
+    	<a href="#Usage"><img src="/Images/module2.png" alt="module 2" height="90" width="140" width="150" width="185"></a>
+    	<a href="/Release_notes"><img src="/Images/module3.png" alt="module 3" height="90" width="140" width="150" width="185"></a>
+    	<a href="#FAQ"><img src="/Images/module7.png" alt="module 3" height="90" width="140" width="150" width="185" ></a>
     </th>
-    <th width="20%" colspan="3" rowspan="3">Logging & Monitoring 🕶
-    	<a href="docs/08-xray/"><img src="docs/images/module8.png" alt="module 3" height="90" width="140" width="150" width="185"></a>
+    <th width="20%" colspan="3" rowspan="3">Logging 🕶
+    	<a href="/Debug/Readme.md"><img src="/Images/module8.png" alt="module 3" height="90" width="140" width="150" width="185"></a>
 </th>
   </tr>
   <tr >
@@ -44,9 +44,6 @@ Understand 	| Deploy | Debug | Advanced |
 [Description](#Description)	
 [Deployment Options](#Different-Deployment-Modes)
 [Controls Supported & Remediation](#Controls-supported-and-proposed-remediations-against-them) |
-[Usage](#Usage)
-[Release Notes](/Release_notes)
-[FAQ](#FAQ)
 [Modules per ControlIDs](/Remediation/Readme.md)
 [Lambda Policy](/Config/lambdarole.yml) | 
 [Debugging](/Debug/Readme.md) |
