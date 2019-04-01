@@ -104,7 +104,24 @@ It needs following input parameters:( An example file enlisting parameters is [h
   * **AccountList:** comma delimeted list of accounts
   * **ControlsIdforRemediation:** ControlId for which you want to enable remediation
 
+## Sample SNS Output message
 
+'''-------------------------------------------------
+for 457721770691:
+The Control 41 is sent for remediation 
+	 sg-0140f585a6a580570 in ap-northeast-2 is being remediated 
+	 sg-0342a4f68a6aec8ee in ap-northeast-2 is being remediated 
+
+for 383031258652:
+The Control 41 is sent for remediation 
+	 sg-d85575a6 in us-west-2 is being remediated 
+	 sg-cfae4686 in us-east-1 is being remediated 
+	 sg-0087b7590d30e7380 in us-east-1 is being remediated 
+-------------------------------------------------'''
+
+
+
+## Debug using CloudWatch Logs
 
 ## FAQ
   1. Do we need to provide extra permissions to already existing Qualys role?
