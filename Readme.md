@@ -20,11 +20,11 @@ Here's an overview of this repository and how they map to different sections:
     	<span style="font-weight:bold">Deploy 🏰</span> <br> 
     	<a href="#Usage"><img src="/Images/module2.png" alt="Usage" height="90" width="140" width="150" width="185"></a>
     	<a href="/Release_notes"><img src="/Images/module3.png" alt="Release Notes" height="90" width="140" width="150" width="185"></a>
-    	<a href="#FAQ"><img src="/Images/module7.png" alt="FAQ" height="90" width="140" width="150" width="185" ></a>
+    	<a href="/Remediation/Readme.md"><img src="/Images/module7.png" alt="Modules per ControlIDs" height="90" width="140" width="150" width="185" ></a>
     </th>
-    <th width="20%" colspan="3" rowspan="3">Logging 🕶
+    <th width="20%" colspan="3" rowspan="3">FAQ & Logging
     	<a href="/Debug/Readme.md"><img src="/Images/module8.png" alt="Debugging" height="90" width="140" width="150" width="185"></a>
-	<a href="/Remediation/Readme.md"><img src="/Images/module8.png" alt="Modules per ControlIDs" height="90" width="140" width="150" width="185"></a>
+	<a href="#FAQ"><img src="/Images/module8.png" alt="FAQ" height="90" width="140" width="150" width="185"></a>
 </th>
   </tr>
   <tr >
