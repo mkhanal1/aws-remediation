@@ -40,7 +40,7 @@ This template deploys remediation modules against each [supported controls](/Rem
 
 It deploys ==>
 
-  1. [**A main lambda function](/mainlambdafunction.py) and associated role** 
+  1. [**A main lambda function**](/mainlambdafunction.py) **and associated role** 
   2. [**Remediation module for supported ControlIDs**](/Remediation)
   3. **A CloudWatch Event and permission to invoke lambda**
   4. **A output SNS Topic and associated sns policy**
