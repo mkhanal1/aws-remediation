@@ -1,10 +1,3 @@
-## Count of Controls Supported and Unsupported
-
-Controls | Count
-----|----|
-Supported|18
-Unsupported|39
-
 **BEFORE GA**
 
 2019-04-08
