@@ -1,5 +1,8 @@
 **BEFORE GA**
 
+2019-04-10
+* support for CID 24
+
 2019-04-08
 * Support for CID 42
 * Support for CID 47
