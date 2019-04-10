@@ -2,8 +2,8 @@
 
 CID	|	CONTROL NAME	|	SERVICE	|	REMEDIATION	|	ACTION	|
 ----|-----|-----|-----|-----|
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)1 |	Ensure multi-factor authentication (MFA) is enabled for all IAM users that have a console password	|	IAM	|	![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)2	|	Ensure console credentials unused for 90 days or greater are disabled	|	IAM	|	![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	| 
+1 |	Ensure multi-factor authentication (MFA) is enabled for all IAM users that have a console password	|	IAM	|	![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
+2	|	Ensure console credentials unused for 90 days or greater are disabled	|	IAM	|	![#f03c15](https://placehold.it/15/f03c15/000000?text=+) NO	|	NA	| 
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)3	|	Ensure access keys unused for 90 days or greater are disabled	|	IAM	|	![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)4	|	Ensure access key1 is rotated every 90 days or less	|	IAM	|	![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)5	|	Ensure access key2 is rotated every 90 days or less	|	IAM	|	![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
