@@ -57,5 +57,5 @@ CID	|	CONTROL NAME	|	SERVICE	|	REMEDIATION	|	ACTION	|
 [53](/Remediation/53.py)	|	Ensure Encryption is enabled for the database Instance	|	RDS	| ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)	Yes	|		Enable encryption	|
 [54](/Remediation/54.py)	|	Ensure database Instance snapshot is encrypted	|	RDS	| ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)	Yes	|		Enable encryption 	|
 [55](/Remediation/55.py)	|	Ensure auto minor version upgrade is enabled for a Database Instance	|	RDS	| ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)	Yes	|		yes	|
-[56](/Remediation/56.py)	|	Ensure database Instance is not listening on to a standard/default port	|	RDS	| ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)	Yes	|		yes 	|
+[56](/Remediation/56.py)	|	Ensure database Instance is not listening on to a standard/default port	|	RDS	| No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|		NA 	|
 [57](/Remediation/57.py)		|	Ensure that bucket policy enforces encryption in transit	|	S3	| ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)	Yes	|		Enable encryption 	|
