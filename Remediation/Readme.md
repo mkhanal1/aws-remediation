@@ -1,8 +1,9 @@
 ## Count of Controls Supported and Unsupported
 
-* TOTAL = 57
-* SUPPORTED = 18
-* UNSUPPORTED = 39
+Controls | Count
+----|----|
+Supported|18
+Unsupported|39
 
 ----|----|----|
 57 | 18 | 39 |
