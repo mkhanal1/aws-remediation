@@ -20,7 +20,7 @@ CID	|	CONTROL NAME	|	SERVICE	|	REMEDIATION	|	ACTION	|
 16	|	 Ensure hardware MFA is enabled for the root account 	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
 17	|	Ensure IAM policies are attached only to groups or roles	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
 18	|	Avoid the use of the root account	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
-[19](/Remediation/19.py)	|	 Ensure CloudTrail is enabled in all regions 	|	CLOUD_TRAIL	|	Yes ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)	|		Enable CloudTrail 	|
+[19](/Remediation/19.py)	|	 Ensure CloudTrail is enabled in all regions 	|	CLOUD_TRAIL	|	![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Yes	|		Enable CloudTrail 	|
 [20](/Remediation/20.py) |	Ensure CloudTrail log file validation is enabled | CLOUD_TRAIL	|	![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Yes	|	Enable CloudTrail log file validation |
 21	|	Ensure the S3 bucket CloudTrail logs to is not publicly accessible	|	CLOUD_TRAIL	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
 22	|	Ensure CloudTrail trails are integrated with CloudWatch Logs	|	CLOUD_TRAIL	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
@@ -46,7 +46,7 @@ CID	|	CONTROL NAME	|	SERVICE	|	REMEDIATION	|	ACTION	|
 [42](/Remediation/42.py)	|	Ensure no security groups allow ingress from 0.0.0.0/0 to port 3389	|	VPC	|	![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Yes	|		Remove rule containing port 3389 from security group 	|
 [43](/Remediation/43.py)	|	Ensure VPC flow logging is enabled in all VPCs	|	VPC	|	![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Yes	|		Enable VPC flow logging 	|
 [44](/Remediation/44.py)	|	Ensure the default security group of every VPC restricts all traffic	|	VPC	|	![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Yes	|		Remove all inbound rules from default security group 	|
-[45](/Remediation/45.py)	|	S3 Bucket Access Control List Grant Access to Everyone or Authenticated Users	|	S3	|	Yes	|		yes 	|
+[45](/Remediation/45.py)	|	S3 Bucket Access Control List Grant Access to Everyone or Authenticated Users	|	S3	| ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)	Yes	|		yes 	|
 [46](/Remediation/46.py)	|	Ensure S3 Bucket Policy does not allow anonymous (public) access to S3 bucket	|	S3	|	![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Yes	|		yes 	|
 [47](/Remediation/47.py)	|	Ensure access logging is enabled for S3 buckets	|	S3	| ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)	Yes	|		Enable access logging 	|
 [48](/Remediation/48.py)	|	Ensure versioning is enabled for S3 buckets	|	S3	|	![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Yes	|		Enable versioning 	|
