@@ -1,5 +1,8 @@
 ## Count of Controls Supported and Unsupported
-**TOTAL** | **SUPPORTED** | **UNSUPPORTED** |
+* **TOTAL** 57
+* **SUPPORTED** 18
+* **UNSUPPORTED** 39
+
 ----|----|----|
 57 | 18 | 39 |
 
