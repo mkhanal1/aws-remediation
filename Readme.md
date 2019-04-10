@@ -107,5 +107,5 @@ It needs following input parameters:( An example file enlisting parameters is [h
 
 Controls | Count
 ----|----|
-Supported|18
-Unsupported|39
+[Supported](/Remediation/Readme.md)|18
+[Unsupported](/Remediation/Readme.md)|39
