@@ -1,9 +1,10 @@
 ## Controls supported and proposed remediations against them
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
+
 CID	|	CONTROL NAME	|	SERVICE	|	REMEDIATION	|	ACTION	|
 ----|-----|-----|-----|-----|
-```diff 
-+ 1 |	Ensure multi-factor authentication (MFA) is enabled for all IAM users that have a console password	|	IAM	|	No	|	NA	| ```
-- 2	|	Ensure console credentials unused for 90 days or greater are disabled	|	IAM	|	No	|	NA	| 
+1 |	Ensure multi-factor authentication (MFA) is enabled for all IAM users that have a console password	|	IAM	|	No	|	NA	|
+2	|	Ensure console credentials unused for 90 days or greater are disabled	|	IAM	|	No	|	NA	| 
 3	|	Ensure access keys unused for 90 days or greater are disabled	|	IAM	|	No	|	NA	|
 4	|	Ensure access key1 is rotated every 90 days or less	|	IAM	|	No	|	NA	|
 5	|	Ensure access key2 is rotated every 90 days or less	|	IAM	|	No	|	NA	|
