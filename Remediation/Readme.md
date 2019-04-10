@@ -3,23 +3,23 @@
 CID	|	CONTROL NAME	|	SERVICE	|	REMEDIATION	|	ACTION	|
 ----|-----|-----|-----|-----|
 1 |	Ensure multi-factor authentication (MFA) is enabled for all IAM users that have a console password	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
-2	|	Ensure console credentials unused for 90 days or greater are disabled	|	IAM	|	![#f03c15](https://placehold.it/15/f03c15/000000?text=+) NO	|	NA	| 
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)3	|	Ensure access keys unused for 90 days or greater are disabled	|	IAM	|	![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)4	|	Ensure access key1 is rotated every 90 days or less	|	IAM	|	![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)5	|	Ensure access key2 is rotated every 90 days or less	|	IAM	|	![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)6	|	Ensure IAM Password Policy is Enabled	|	IAM	|	![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)7	|	Ensure IAM password policy requires at least one uppercase letter	|	IAM	|	No	|	NA	|
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)8	|	Ensure IAM password policy require at least one lowercase letter	|	IAM	|	No	|	NA	|
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)9	|	Ensure IAM password policy require at least one symbol	|	IAM	|	No	|	NA	|
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)10	|	Ensure IAM password policy require at least one number 	|	IAM	|	No	|	NA	|
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)11	|	Ensure IAM password policy requires minimum length of 14 or greater	|	IAM	|	No	|	NA	|
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)12	|	 Ensure IAM password policy prevents password reuse	|	IAM	|	No	|	NA	|
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)13	|	Ensure IAM password policy expires passwords within 90 days or less	|	IAM	|	No	|	NA	|
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)14	|	Ensure no root account access key exists	|	IAM	|	No	|	NA	|
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)15	|	 Ensure MFA is enabled for the root account	|	IAM	|	No	|	NA	|
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)16	|	 Ensure hardware MFA is enabled for the root account 	|	IAM	|	No	|	NA	|
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)17	|	Ensure IAM policies are attached only to groups or roles	|	IAM	|	No	|	NA	|
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)18	|	Avoid the use of the root account	|	IAM	|	No	|	NA	|
+2	|	Ensure console credentials unused for 90 days or greater are disabled	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	| 
+3	|	Ensure access keys unused for 90 days or greater are disabled	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
+4	|	Ensure access key1 is rotated every 90 days or less	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
+5	|	Ensure access key2 is rotated every 90 days or less	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
+6	|	Ensure IAM Password Policy is Enabled	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
+7	|	Ensure IAM password policy requires at least one uppercase letter	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
+8	|	Ensure IAM password policy require at least one lowercase letter	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
+9	|	Ensure IAM password policy require at least one symbol	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
+10	|	Ensure IAM password policy require at least one number 	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
+11	|	Ensure IAM password policy requires minimum length of 14 or greater	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
+12	|	 Ensure IAM password policy prevents password reuse	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
+13	|	Ensure IAM password policy expires passwords within 90 days or less	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
+14	|	Ensure no root account access key exists	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
+15	|	 Ensure MFA is enabled for the root account	|	IAM	|	No	|	NA	|
+16	|	 Ensure hardware MFA is enabled for the root account 	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
+17	|	Ensure IAM policies are attached only to groups or roles	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
+18	|	Avoid the use of the root account	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
 ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)[19](/Remediation/19.py)	|	 Ensure CloudTrail is enabled in all regions 	|	CLOUD_TRAIL	|	Yes	|		Enable CloudTrail 	|
 ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)[20](/Remediation/20.py)		|	Ensure CloudTrail log file validation is enabled	|	CLOUD_TRAIL	|	Yes	|		Enable CloudTrail log file validation "	|
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)21	|	Ensure the S3 bucket CloudTrail logs to is not publicly accessible	|	CLOUD_TRAIL	|	No	|	NA	|
