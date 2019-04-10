@@ -21,7 +21,7 @@ CID	|	CONTROL NAME	|	SERVICE	|	REMEDIATION	|	ACTION	|
 16	|	 Ensure hardware MFA is enabled for the root account 	|	IAM	|	No	|	NA	|
 17	|	Ensure IAM policies are attached only to groups or roles	|	IAM	|	No	|	NA	|
 18	|	Avoid the use of the root account	|	IAM	|	No	|	NA	|
-[19](/Remediation/19.py)	|	 Ensure CloudTrail is enabled in all regions 	|	CLOUD_TRAIL	|	Yes	|		Enable CloudTrail 	|
+![#c5f015](https://placehold.it/15/c5f015/000000?text=+) [19](/Remediation/19.py)	|	 Ensure CloudTrail is enabled in all regions 	|	CLOUD_TRAIL	|	Yes	|		Enable CloudTrail 	|
 [20](/Remediation/20.py)		|	Ensure CloudTrail log file validation is enabled	|	CLOUD_TRAIL	|	Yes	|		Enable CloudTrail log file validation "	|
 21	|	Ensure the S3 bucket CloudTrail logs to is not publicly accessible	|	CLOUD_TRAIL	|	No	|	NA	|
 22	|	Ensure CloudTrail trails are integrated with CloudWatch Logs	|	CLOUD_TRAIL	|	No	|	NA	|
