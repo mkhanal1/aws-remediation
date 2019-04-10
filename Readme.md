@@ -102,3 +102,10 @@ It needs following input parameters:( An example file enlisting parameters is [h
   * **SlackChannelWebHook:** Webhook to post logs in Slack channel
   * **AccountList:** comma delimeted list of accounts
   * **ControlsIdforRemediation:** ControlId for which you want to enable remediation
+  
+## Count of Controls Supported and Unsupported
+
+Controls | Count
+----|----|
+Supported|18
+Unsupported|39
