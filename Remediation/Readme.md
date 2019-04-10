@@ -1,3 +1,9 @@
+## Count of Controls Supported and Unsupported
+**TOTAL** | **SUPPORTED** | **UNSUPPORTED** |
+----|----|----|
+57 | 18 | 39 |
+
+
 ## Controls supported and proposed remediations against them
 
 CID	|	CONTROL NAME	|	SERVICE	|	REMEDIATION	|	ACTION	|
