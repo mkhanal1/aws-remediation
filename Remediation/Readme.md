@@ -25,8 +25,7 @@ CID	|	CONTROL NAME	|	SERVICE	|	REMEDIATION	|	ACTION	|
 21	|	Ensure the S3 bucket CloudTrail logs to is not publicly accessible	|	CLOUD_TRAIL	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
 22	|	Ensure CloudTrail trails are integrated with CloudWatch Logs	|	CLOUD_TRAIL	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
 ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)[23](/Remediation/23.py)		|	Ensure AWS Config is enabled in all regions	|	CONFIG	|	Yes	|		Enable Config	|
-24	|	Ensure S3 bucket access logging is enabled on the CloudTrail S3
-bucket 	|	CLOUD_TRAIL	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
+24	|	Ensure S3 bucket access logging is enabled on the CloudTrail S3 bucket 	|	CLOUD_TRAIL	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
 25	|	Ensure CloudTrail logs are encrypted at rest using KMS CMKs 	|	CLOUD_TRAIL	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
 26	|	Ensure rotation for customer created CMKs is enabled	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
 27	|	Ensure a log metric filter and alarm exist for unauthorized API calls	|	CLOUD_TRAIL	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
