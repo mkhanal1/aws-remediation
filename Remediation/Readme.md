@@ -2,47 +2,47 @@
 
 CID	|	CONTROL NAME	|	SERVICE	|	REMEDIATION	|	ACTION	|
 ----|-----|-----|-----|-----|
-1 |	Ensure multi-factor authentication (MFA) is enabled for all IAM users that have a console password	|	IAM	|	No	|	NA	|
-2	|	Ensure console credentials unused for 90 days or greater are disabled	|	IAM	|	No	|	NA	| 
-3	|	Ensure access keys unused for 90 days or greater are disabled	|	IAM	|	No	|	NA	|
-4	|	Ensure access key1 is rotated every 90 days or less	|	IAM	|	No	|	NA	|
-5	|	Ensure access key2 is rotated every 90 days or less	|	IAM	|	No	|	NA	|
-6	|	Ensure IAM Password Policy is Enabled	|	IAM	|	No	|	NA	|
-7	|	Ensure IAM password policy requires at least one uppercase letter	|	IAM	|	No	|	NA	|
-8	|	Ensure IAM password policy require at least one lowercase letter	|	IAM	|	No	|	NA	|
-9	|	Ensure IAM password policy require at least one symbol	|	IAM	|	No	|	NA	|
-10	|	Ensure IAM password policy require at least one number 	|	IAM	|	No	|	NA	|
-11	|	Ensure IAM password policy requires minimum length of 14 or greater	|	IAM	|	No	|	NA	|
-12	|	 Ensure IAM password policy prevents password reuse	|	IAM	|	No	|	NA	|
-13	|	Ensure IAM password policy expires passwords within 90 days or less	|	IAM	|	No	|	NA	|
-14	|	Ensure no root account access key exists	|	IAM	|	No	|	NA	|
-15	|	 Ensure MFA is enabled for the root account	|	IAM	|	No	|	NA	|
-16	|	 Ensure hardware MFA is enabled for the root account 	|	IAM	|	No	|	NA	|
-17	|	Ensure IAM policies are attached only to groups or roles	|	IAM	|	No	|	NA	|
-18	|	Avoid the use of the root account	|	IAM	|	No	|	NA	|
-![#c5f015](https://placehold.it/15/c5f015/000000?text=+) [19](/Remediation/19.py)	|	 Ensure CloudTrail is enabled in all regions 	|	CLOUD_TRAIL	|	Yes	|		Enable CloudTrail 	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)1 |	Ensure multi-factor authentication (MFA) is enabled for all IAM users that have a console password	|	IAM	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)2	|	Ensure console credentials unused for 90 days or greater are disabled	|	IAM	|	No	|	NA	| 
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)3	|	Ensure access keys unused for 90 days or greater are disabled	|	IAM	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)4	|	Ensure access key1 is rotated every 90 days or less	|	IAM	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)5	|	Ensure access key2 is rotated every 90 days or less	|	IAM	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)6	|	Ensure IAM Password Policy is Enabled	|	IAM	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)7	|	Ensure IAM password policy requires at least one uppercase letter	|	IAM	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)8	|	Ensure IAM password policy require at least one lowercase letter	|	IAM	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)9	|	Ensure IAM password policy require at least one symbol	|	IAM	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)10	|	Ensure IAM password policy require at least one number 	|	IAM	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)11	|	Ensure IAM password policy requires minimum length of 14 or greater	|	IAM	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)12	|	 Ensure IAM password policy prevents password reuse	|	IAM	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)13	|	Ensure IAM password policy expires passwords within 90 days or less	|	IAM	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)14	|	Ensure no root account access key exists	|	IAM	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)15	|	 Ensure MFA is enabled for the root account	|	IAM	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)16	|	 Ensure hardware MFA is enabled for the root account 	|	IAM	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)17	|	Ensure IAM policies are attached only to groups or roles	|	IAM	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)18	|	Avoid the use of the root account	|	IAM	|	No	|	NA	|
+![#c5f015](https://placehold.it/15/c5f015/000000?text=+)[19](/Remediation/19.py)	|	 Ensure CloudTrail is enabled in all regions 	|	CLOUD_TRAIL	|	Yes	|		Enable CloudTrail 	|
 ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)[20](/Remediation/20.py)		|	Ensure CloudTrail log file validation is enabled	|	CLOUD_TRAIL	|	Yes	|		Enable CloudTrail log file validation "	|
-21	|	Ensure the S3 bucket CloudTrail logs to is not publicly accessible	|	CLOUD_TRAIL	|	No	|	NA	|
-22	|	Ensure CloudTrail trails are integrated with CloudWatch Logs	|	CLOUD_TRAIL	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)21	|	Ensure the S3 bucket CloudTrail logs to is not publicly accessible	|	CLOUD_TRAIL	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)22	|	Ensure CloudTrail trails are integrated with CloudWatch Logs	|	CLOUD_TRAIL	|	No	|	NA	|
 ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)[23](/Remediation/23.py)		|	Ensure AWS Config is enabled in all regions	|	CONFIG	|	Yes	|		Enable Config	|
-24	|	Ensure S3 bucket access logging is enabled on the CloudTrail S3
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)24	|	Ensure S3 bucket access logging is enabled on the CloudTrail S3
 bucket 	|	CLOUD_TRAIL	|	No	|	NA	|
-25	|	Ensure CloudTrail logs are encrypted at rest using KMS CMKs 	|	CLOUD_TRAIL	|	No	|	NA	|
-26	|	Ensure rotation for customer created CMKs is enabled	|	IAM	|	No	|	NA	|
-27	|	Ensure a log metric filter and alarm exist for unauthorized API calls	|	CLOUD_TRAIL	|	No	|	NA	|
-28	|	Ensure a log metric filter and alarm exist for Management Console sign-in without MFA	|	CLOUD_TRAIL	|	No	|	NA	|
-29	|	Ensure a log metric filter and alarm exist for usage of root" account"	|	CLOUD_TRAIL	|	No	|	NA	|
-30	|	Ensure a log metric filter and alarm exist for IAM policy changes	|	CLOUD_TRAIL	|	No	|	NA	|
-31	|	Ensure a log metric filter and alarm exist for CloudTrail configuration changes	|	CLOUD_TRAIL	|	No	|	NA	|
-32	|	Ensure a log metric filter and alarm exist for AWS Management Console authentication failures	|	CLOUD_TRAIL	|	No	|	NA	|
-33	|	Ensure a log metric filter and alarm exist for disabling or scheduled deletion of customer created CMKs	|	CLOUD_TRAIL	|	No	|	NA	|
-34	|	Ensure a log metric filter and alarm exist for S3 bucket policy changes	|	CLOUD_TRAIL	|	No	|	NA	|
-35	|	Ensure a log metric filter and alarm exist for AWS Config configuration changes	|	CLOUD_TRAIL	|	No	|	NA	|
-36	|	Ensure a log metric filter and alarm exist for security group changes	|	CLOUD_TRAIL	|	No	|	NA	|
-37	|	Ensure a log metric filter and alarm exist for changes to Network Access Control Lists (NACL)	|	CLOUD_TRAIL	|	No	|	NA	|
-38	|	Ensure a log metric filter and alarm exist for changes to network gateways	|	CLOUD_TRAIL	|	No	|	NA	|
-39	|	Ensure a log metric filter and alarm exist for route table changes	|	CLOUD_TRAIL	|	No	|	NA	|
-40	|	Ensure a log metric filter and alarm exist for VPC changes	|	CLOUD_TRAIL	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)25	|	Ensure CloudTrail logs are encrypted at rest using KMS CMKs 	|	CLOUD_TRAIL	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)26	|	Ensure rotation for customer created CMKs is enabled	|	IAM	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)27	|	Ensure a log metric filter and alarm exist for unauthorized API calls	|	CLOUD_TRAIL	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)28	|	Ensure a log metric filter and alarm exist for Management Console sign-in without MFA	|	CLOUD_TRAIL	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)29	|	Ensure a log metric filter and alarm exist for usage of root" account"	|	CLOUD_TRAIL	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)30	|	Ensure a log metric filter and alarm exist for IAM policy changes	|	CLOUD_TRAIL	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)31	|	Ensure a log metric filter and alarm exist for CloudTrail configuration changes	|	CLOUD_TRAIL	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)32	|	Ensure a log metric filter and alarm exist for AWS Management Console authentication failures	|	CLOUD_TRAIL	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)33	|	Ensure a log metric filter and alarm exist for disabling or scheduled deletion of customer created CMKs	|	CLOUD_TRAIL	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)34	|	Ensure a log metric filter and alarm exist for S3 bucket policy changes	|	CLOUD_TRAIL	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)35	|	Ensure a log metric filter and alarm exist for AWS Config configuration changes	|	CLOUD_TRAIL	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)36	|	Ensure a log metric filter and alarm exist for security group changes	|	CLOUD_TRAIL	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)37	|	Ensure a log metric filter and alarm exist for changes to Network Access Control Lists (NACL)	|	CLOUD_TRAIL	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)38	|	Ensure a log metric filter and alarm exist for changes to network gateways	|	CLOUD_TRAIL	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)39	|	Ensure a log metric filter and alarm exist for route table changes	|	CLOUD_TRAIL	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)40	|	Ensure a log metric filter and alarm exist for VPC changes	|	CLOUD_TRAIL	|	No	|	NA	|
 ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)[41](/Remediation/41.py)	|	Ensure no security groups allow ingress from 0.0.0.0/0 to port 22	|	VPC	|	Yes	|	Remove rule containing port 22 from security group 	|
 ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)[42](/Remediation/42.py)	|	Ensure no security groups allow ingress from 0.0.0.0/0 to port 3389	|	VPC	|	Yes	|		Remove rule containing port 3389 from security group 	|
 ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)[43](/Remediation/43.py)	|	Ensure VPC flow logging is enabled in all VPCs	|	VPC	|	Yes	|		Enable VPC flow logging 	|
@@ -51,8 +51,8 @@ bucket 	|	CLOUD_TRAIL	|	No	|	NA	|
 ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)[46](/Remediation/46.py)	|	Ensure S3 Bucket Policy does not allow anonymous (public) access to S3 bucket	|	S3	|	Yes	|		yes 	|
 ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)[47](/Remediation/47.py)	|	Ensure access logging is enabled for S3 buckets	|	S3	|	Yes	|		Enable access logging 	|
 ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)[48](/Remediation/48.py)	|	Ensure versioning is enabled for S3 buckets	|	S3	|	Yes	|		Enable versioning 	|
-49	|	Ensure a support role has been created to manage incidents with AWS Support	|	IAM	|	No	|	NA	|
-50	|	Ensure IAM policies that allow full administrative privileges are not created	|	IAM	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)49	|	Ensure a support role has been created to manage incidents with AWS Support	|	IAM	|	No	|	NA	|
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)50	|	Ensure IAM policies that allow full administrative privileges are not created	|	IAM	|	No	|	NA	|
 ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)[51](/Remediation/51.py)	|	Ensure that Public Accessibility is set to No for Database Instances	|	RDS	|	Yes	|		Disable public accessibility for RDS instances 	|
 ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)[52](/Remediation/52.py)	|	Ensure DB snapshot is not publicly visible	|	RDS	|	Yes	|		Disable public visibility of DB snapshot	|
 ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)[53](/Remediation/53.py)	|	Ensure Encryption is enabled for the database Instance	|	RDS	|	Yes	|		Enable encryption	|
