@@ -56,6 +56,6 @@ CID	|	CONTROL NAME	|	SERVICE	|	REMEDIATION	|	ACTION	|
 [52](/Remediation/52.py)	|	Ensure DB snapshot is not publicly visible	|	RDS	|	![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Yes	|		Disable public visibility of DB snapshot	|
 53|	Ensure Encryption is enabled for the database Instance	|	RDS	| No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|		You can only enable encryption for an Amazon RDS DB instance when you create it.	|
 [54](/Remediation/54.py)	|	Ensure database Instance snapshot is encrypted	|	RDS	| ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)	Yes	|		Make an encrypted copy of the snapshot and delete the unencrypted one 	|
-[55](/Remediation/55.py)	|	Ensure auto minor version upgrade is enabled for a Database Instance	|	RDS	| ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)	Yes	|		yes	|
-56|	Ensure database Instance is not listening on to a standard/default port	|	RDS	| No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|		NA 	|
+[55](/Remediation/55.py)	|	Ensure auto minor version upgrade is enabled for a Database Instance	|	RDS	| ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)	Yes	|		Enable AutoMinorVerson so DB instance should receive automatic engine version upgrades when available	|
+56|	Ensure database Instance is not listening on to a standard/default port	|	RDS	| No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|		Its upto customer to decide the ports the DB instance will be listening to 	|
 [57](/Remediation/57.py)		|	Ensure that bucket policy enforces encryption in transit	|	S3	| ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)	Yes	|		Enable encryption 	|
