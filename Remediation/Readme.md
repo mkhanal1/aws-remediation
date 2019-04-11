@@ -54,7 +54,7 @@ CID	|	CONTROL NAME	|	SERVICE	|	REMEDIATION	|	ACTION	|
 50	|	Ensure IAM policies that allow full administrative privileges are not created	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
 [51](/Remediation/51.py)	|	Ensure that Public Accessibility is set to No for Database Instances	|	RDS	| ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)	Yes	|		Disable public accessibility for RDS instances 	|
 [52](/Remediation/52.py)	|	Ensure DB snapshot is not publicly visible	|	RDS	|	![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Yes	|		Disable public visibility of DB snapshot	|
-[53](/Remediation/53.py)	|	Ensure Encryption is enabled for the database Instance	|	RDS	| ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)	Yes	|		Enable encryption	|
+[53](/Remediation/53.py)	|	Ensure Encryption is enabled for the database Instance	|	RDS	| No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|		You can only enable encryption for an Amazon RDS DB instance when you create it.	|
 [54](/Remediation/54.py)	|	Ensure database Instance snapshot is encrypted	|	RDS	| ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)	Yes	|		Enable encryption 	|
 [55](/Remediation/55.py)	|	Ensure auto minor version upgrade is enabled for a Database Instance	|	RDS	| ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)	Yes	|		yes	|
 [56](/Remediation/56.py)	|	Ensure database Instance is not listening on to a standard/default port	|	RDS	| No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|		NA 	|
