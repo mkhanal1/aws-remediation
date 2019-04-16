@@ -20,8 +20,8 @@ CID	|	CONTROL NAME	|	SERVICE	|	REMEDIATION	|	ACTION	|
 16	|	 Ensure hardware MFA is enabled for the root account 	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
 17	|	Ensure IAM policies are attached only to groups or roles	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
 18	|	Avoid the use of the root account	|	IAM	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
-[19](/Remediation/19.py)	|	 Ensure CloudTrail is enabled in all regions 	|	CLOUD_TRAIL	|	![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Yes	|		Enable CloudTrail 	|
-[20](/Remediation/20.py) |	Ensure CloudTrail log file validation is enabled | CLOUD_TRAIL	|	![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Yes	|	Enable CloudTrail log file validation |
+[19](/Remediation/19.py)	|	 Ensure CloudTrail is enabled in all regions 	|	CLOUD_TRAIL	|	![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Yes	|		Enable the CloudTrail across all regions. The default bucket will be named cloudtraillogs-accountId.	|
+[20](/Remediation/20.py) |	Ensure CloudTrail log file validation is enabled | CLOUD_TRAIL	|	![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Yes	|	Enable CloudTrail log file validation for all the affected Trails. |
 21	|	Ensure the S3 bucket CloudTrail logs to is not publicly accessible	|	CLOUD_TRAIL	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
 22	|	Ensure CloudTrail trails are integrated with CloudWatch Logs	|	CLOUD_TRAIL	|	No ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)	|	NA	|
 [23](/Remediation/23.py)		|	Ensure AWS Config is enabled in all regions	|	CONFIG	| ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)	Yes	|		Enable Config	|
