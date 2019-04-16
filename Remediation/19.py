@@ -7,7 +7,7 @@ Author: Mikesh Khanal
 Created Date: 2018-11-11
 Modified Date: 2019-01-31
 
-Usage: This module will enable the CloudTrail across all regions.
+Usage: This module will enable the CloudTrail across all regions. The default bucket will be named cloudtraillogs-accountId
 
 """
 
