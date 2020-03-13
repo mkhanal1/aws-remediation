@@ -17,7 +17,7 @@ Here's an overview of this repository and how they map to different sections:
     <th width="60%">
     	<span style="font-weight:bold">Deploy 🐣 </span> <br> 
     	<a href="#Usage">Usage, </a>
-	<a href="/Release_notes">Release Notes</a>
+	<a href="/Release_notes.md">Release Notes</a>
     </th>
     <th width="20%" colspan="3" rowspan="3">FAQ & Logging 🔎
     	<a href="/Debug/Readme.md">Debugging, </a>
@@ -40,7 +40,7 @@ This template deploys remediation modules against each [supported controls](/Rem
 
 It deploys ==>
 
-  1. **A main lambda function and associated role** 
+  1. [**A main lambda function**](/mainlambdafunction.py) **and** [**associated role & policy**](/Config/lambdarole.yml) 
   2. [**Remediation module for supported ControlIDs**](/Remediation)
   3. **A CloudWatch Event and permission to invoke lambda**
   4. **A output SNS Topic and associated sns policy**
@@ -60,7 +60,7 @@ It deploys ==>
         4. The module will send the logs to main lambda, which sends it to Output SNS topic.
         5. The SNS topic, if subscribed, will send information to email or slack channel.
 
-* **A lambda function across multiple accounts**: 
+* **A lambda function for multiple accounts**: 
   * A single lambda function with subsequent modules for all your accounts. 
   * Disabling remediation of control per account is not possible; it will be effective for all accounts.
  
@@ -102,3 +102,10 @@ It needs following input parameters:( An example file enlisting parameters is [h
   * **SlackChannelWebHook:** Webhook to post logs in Slack channel
   * **AccountList:** comma delimeted list of accounts
   * **ControlsIdforRemediation:** ControlId for which you want to enable remediation
+  
+## Count of Controls Supported and Unsupported
+
+Controls | Count
+----|----|
+[Supported](/Remediation/Readme.md)|18
+[Unsupported](/Remediation/Readme.md)|39
